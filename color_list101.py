@@ -693,6 +693,7 @@ color_list = \
  ('yellowGreen', '#9acd32', (154, 205, 50))]
 
 # as an  example list all the color names startng with 'go'
+# in old Nevada tradition I am looking for 'gold'
 name_list_a = [name for name, hex, tup in color_list if name.startswith('go')]
 print(name_list_a)
 
