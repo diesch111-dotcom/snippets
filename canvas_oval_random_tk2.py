@@ -2,7 +2,7 @@
 
 The canvas.create_oval() method is used to draw circles and ellipses
 coordinates of an imaginary bounding box (rectangle that encloses the oval)
-or use a helper function to calulate center and radius of a circle
+or use a helper function to calculate center and radius of a circle
 
 Tkinter can use a number of named colors (not case sensitive) like
 red, green, blue, white, black, tan, pink, yellow, magenta, lightblue
