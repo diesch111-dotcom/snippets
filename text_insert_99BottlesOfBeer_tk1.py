@@ -25,7 +25,7 @@ text1.see('460.0')
 to show the text from start of line 27 to start of line 31 use
 print(text1.get('27.0', '31.0'))
 
-if you know a person that does know the full lyrics of this famous
+if you know a person that does not know the full lyrics of this famous
 song, run this code so they can learn it
 introducing a large font might help
 
