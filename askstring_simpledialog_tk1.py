@@ -36,7 +36,7 @@ import turtle as tu
 tu.Screen().setup(15, 15)
 # string input
 #str1 = tu.textinput(title, prompt)
-name = tu.textinput("Name", "Please enter your name:"
+name = tu.textinput("Name", "Please enter your name:")
 # float input, integer value converted to float
 #num1 = tu.numinput(title, prompt, default=None, minval=None, maxval=None)
 age = tu.numinput("Age", "How old are you:", minval=0, maxval=150)
