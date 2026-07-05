@@ -43,6 +43,7 @@ x = 50
 y = 100
 # use width x height + x_offset + y_offset (no spaces!)
 root.geometry(f"{w}x{h}+{x}+{y}")
+root.title("tkinter pack() layout manager")
 # give the root some color, default is a grey white
 root.configure(bg="wheat")
 
