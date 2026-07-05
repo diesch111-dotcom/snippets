@@ -6,6 +6,7 @@ A button is one of the most fundamental tkinter GUI widgets. It’s used
 to trigger an action (some Python function) when a user clicks on it.
 
 creating a tk.Button(parent, options...)
+options are...
 text: a string displayed on the button.
 command: name of the function to execute when clicked, no ()
 bg/fg: background color and foreground color of text. 
@@ -15,14 +16,20 @@ font: a tuple defining the font (family, size, and weight)
     (e.g., ("Helvetica", 12, "bold")
 padx/pady: internal padding of text in pixels
 
- here we use the
- Tkinter pack() layout manager: (need to experiment with this) 
-    pack() defaults are side='top' and anchor='center'
-    fill=0, expand=0, ipadx=0, ipady=0, padx=0, pady=0
-    ipad is internal padding and pad is external padding
+here we use the
+Tkinter pack() layout manager: (need to experiment with this) 
+pack() defaults are side='top' and anchor='center'
+fill=0, expand=0, ipadx=0, ipady=0, padx=0, pady=0
+ipad is internal padding and pad is external padding
 
 can use layout manager pack() and layout manager place(x, y) together
 where place(x, y) positions absolute using x and y coordinates
+
+Check out the same idea with a grid() layout manager in 'button_tk102.py'
+
+docs
+https://tkdocs.com/shipman/button.html
+https://tkdocs.com/shipman/colors.html
 
 some info from Google Gemini
  
@@ -62,7 +69,15 @@ root.configure(bg="wheat")
 
 # create a label to show the action, font is optional
 # a label is there to show text
-label = tk.Label(root, text="Click the button below", font=("Arial", 12))
+label = tk.Label(
+    root, 
+    text="Click the button below", 
+    font=("Arial", 12, "bold"),  # font is optional, but nice
+    fg="white",   # foreground color of text
+    bg="black",   # background color of label
+    padx=10,      # padding around text
+    pady=5
+)
 
 # create the Button
 # the 'command' argument tells Tkinter which function to run when clicked
