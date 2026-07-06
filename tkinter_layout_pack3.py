@@ -65,7 +65,7 @@ button_right = tk.Button(root, text="Righty", bg="lightpink",
 
 # now position the widgets, notice the order of packing
 # the default for pack() is from the top down and center of root
-# padx is used to separate the widgets along the vertical axis
+# pady is used to separate the widgets along the y vertical axis
 # ipadx pads the text/image within the widget
 label1.pack(pady=5, ipadx=10)
 button1.pack(pady=5)
