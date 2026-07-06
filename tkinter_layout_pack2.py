@@ -58,7 +58,7 @@ print(button_test)   # .!button2
 print(label1)        # .!label
 
 # now position the widgets, notice the order of packing
-# padx is used to separate the widgets along the vertical axis
+# pady is used to separate the widgets along the vertical y axis
 label1.pack(pady=5)
 button_click.pack(pady=5)
 button_test.pack()
