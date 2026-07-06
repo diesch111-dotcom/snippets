@@ -18,6 +18,7 @@ https://tkdocs.com/shipman/label.html
 https://tkdocs.com/shipman/button.html
 https://tkdocs.com/shipman/frame.html
 
+this file haa been renamed ttk_Notebook2_lists.py for better reference
 using the Spyder IDE on Linux  dns(vegaseat) 4jul2026
 """
 
