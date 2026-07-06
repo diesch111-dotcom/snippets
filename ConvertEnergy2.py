@@ -10,8 +10,12 @@ works with LinuxMint and Spyder IDE  dns(vegaseat)  15jun2026
 '''
 
 '''
-curious fact
+curious facts
 173,000 trillion watts of solar power strikes the Earth continuously
+
+Hydrogen to Helium fusion energy = 2,500,000,000,000 Joules/mole Helium
+it takes 1 joule of energy to lift an average apple up 1 meter
+1 joule = 1,000,000 erg
 '''
 
 def convert_units(x, unit1, unit2, conv_dict):
