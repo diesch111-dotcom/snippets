@@ -1,2 +1,3 @@
-just a detailed look at Python import statements with examples
-the file treeview_solvents_ttk2.py has a certain useful elegance
+A lightsome look at Python code examples
+'treeview_solvents_ttk2.py' is downright utile 
+ttk_NoteBook1.py organizes data via good looks
