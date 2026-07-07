@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """ search_codefile2.py
 
-A handy snippet to quickly search all the code files in a
+A handy snippet to quickly search all the .py code files in a
 directory/folder for a segment of code. Just put this little 
 ik utility into a folder and run it.  I use it a lot!
 
