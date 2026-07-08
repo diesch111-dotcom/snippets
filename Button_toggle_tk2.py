@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 """ Button_toggle_tk2.py
 
-Create a tk.Button() and use a class Static to toggle colors
+Create a tk.Button() and use a class with a sensible name like 'Static' 
+to toggle colors
 
-The Spyder IDE 'New File...' command gives the 2 leading Shebangs/Hashbangs
+The Spyder IDE 'New File...' command creates the 2 leading Shebang/Hashbang
 lines that tell a Unix based system about Python3 location and which codex 
 to use, it also adds a triple quote comment area ---  nice!
 
