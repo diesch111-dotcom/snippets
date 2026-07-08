@@ -142,7 +142,7 @@ with open(filename, "r") as fin:
     elements_csv2 = fin.read()
 
 
-# convert csv string to dictionary of
+# convert csv string to a dictionary of
 # symbol:(name, int(atomic_number), float(atomic_weight)) pairs
 # create an empty dictionary
 e_dict2 = {}
@@ -156,7 +156,7 @@ pprint.pprint(e_dict2)
 
 print('-'*30)
 
-# using dictionary comprehension:
+# using a dictionary comprehension:
 # note: split() gives a list
 e_dict3 = {line.split(",")[1]: (line.split(",")[2], int(line.split(",")[0]),\
 float(line.split(",")[3])) for line in elements_csv2.split("\n")}
