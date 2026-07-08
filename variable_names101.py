@@ -70,7 +70,6 @@ class Employee:
 
 	def fullname(self):
 		return f'{self.first} {self.last}'
-		self.pay *= self.raise_amount
 
 
 # create instances of Employee(first, last, pay)
