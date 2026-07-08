@@ -11,6 +11,9 @@ a convenience template...
 print()
 print("="*40)
 
+The Spyder IDE 'New File...' command gives the 2 leading Shebangs/Hashbangs
+lines that tell a Unix based system about Python3 location and which codex 
+to use, it also adds a triple quote comment area ---  nice!
 
 tested using the Spyder IDE on Linux  dns(vegaseat)  4jul2026
 """
