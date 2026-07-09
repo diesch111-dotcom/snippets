@@ -1,6 +1,6 @@
 ''' PIL_resize1.py
 
-This code snipper uses PIL (pillow) to resize a image.
+This code snipper uses PIL (pillow) to resize an image.
 PIL the Python Imaging Library has image processing features
 Now called Pillow, a modern, actively maintained fork of PIL
 
