@@ -21,8 +21,6 @@ in your Python code.
 tested using the Spyder IDE on Linux  dns(vegaseat)  9jul2026
 '''
 
-#import os
-#import time
 from PIL import Image, ImageDraw
 from math import sin, cos
 
