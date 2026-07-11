@@ -30,6 +30,18 @@ tested using the Spyder IDE on Linux  dns(vegaseat)  11jul2026
 
 import tkinter as tk
 
+# a class to the rescue, to give all global variables a safe namespace
+class GlobalClass(object):
+    """declare all global variables here"""
+    x = 0
+    #z = False
+
+# now all global variables get a namespace (the class instance)
+# use something like ww (from WorldWide) for a recognizable 
+# namespace for global variables
+ww = GlobalClass()
+
+
 def info(event):
     info ='You clicked mouse button number', event.num
     root.title(info)
@@ -55,13 +67,12 @@ def exit(event):
 
 def mouse_wheel(event):
     "the mouse pointer has to be over the root area"
-    global counter
     # respond to Linux or Windows wheel event
     if event.num == 5 or event.delta == -120:
-        counter -= 1
+        ww.counter -= 1
     if event.num == 4 or event.delta == 120:
-        counter += 1
-    str = "root wheel count = {}".format(counter)
+        ww.counter += 1
+    str = "root wheel count = {}".format(ww.counter)
     root.title(str)
     print(str)
 
@@ -92,7 +103,7 @@ button1.bind('<Double-1>', exit)
 # exit program on Escape key pressed
 root.bind('<Escape>', exit)
 # the mouae wheel counter is global here
-counter = 0
+ww.counter = 0
 # Windows
 root.bind("<MouseWheel>", mouse_wheel)
 # Linux
