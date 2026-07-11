@@ -33,7 +33,7 @@ import tkinter as tk
 # a class to the rescue, to give all global variables a safe namespace
 class GlobalClass(object):
     """declare all global variables here"""
-    x = 0
+    count = 0
     #z = False
 
 # now all global variables get a namespace (the class instance)
