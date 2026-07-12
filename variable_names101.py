@@ -5,6 +5,12 @@
 How private are variable names in Python code?
 Some simple print() tests should give a clue.
 
+It is good practice to start a function name with a small cap verb.
+Parameters/arguments are passed to a function by reference and 
+become local to the function, unless declared global.
+
+Class names are Capitlized by convention.
+
 a convenience template...
 
 # testing...
@@ -46,14 +52,15 @@ print(x)  # 77  no leaks here!
 print("="*40)
 
 # does it leak out from a function?
-def triple(x):
+def do_triple(x):
     x =  x * 3
     return x 
 
-y = triple(x)
+y = do_triple(x)
 print(y)  # 231
 # testing...
-print(x)  # 77 no leak from the function!
+print(x)  # 77  no leak from the function!
+
 print("="*40)
 
 # Class anybody?
@@ -70,12 +77,13 @@ class Employee:
 
 	def fullname(self):
 		return f'{self.first} {self.last}'
+		self.pay *= self.raise_amount
 
 
 # create instances of Employee(first, last, pay)
 ben = Employee('Ben', 'Dover', 53_000)
 stew = Employee('Stew', 'Pitt', 45_000)
-bud = Employee('Bud', 'Ugly', 35_000)
+bud = Employee('Bud', 'Tugly', 35_000)
 
 print(ben.fullname()) # Ben Dover
 print(ben.pay)        # 53000
