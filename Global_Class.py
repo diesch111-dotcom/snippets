@@ -20,7 +20,7 @@ class GlobalClass(object):
 ww = GlobalClass()
 
 def incr_wwx() :
-    """ww.x changes, but does not have to be declared global"""
+    """ww.x changes, but is not declared global"""
     ww.x += 1
     return ww.x
 
