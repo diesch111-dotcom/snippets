@@ -9,6 +9,11 @@ It is good practice to start a function name with a small cap verb.
 Parameters/arguments are passed to a function by reference and 
 become local to the function, unless declared global.
 
+A return statement exits a function and local variables are deleted.
+There can be only one active return.
+A yield statement exits a function and local variables are retained,
+behave like a static variable.  Mutiple yield are possibe.
+
 Class names are Capitalized by convention.
 
 a convenience template...
@@ -60,6 +65,52 @@ y = do_triple(x)
 print(y)  # 231
 # testing...
 print(x)  # 77  no leak from the function!
+
+print("="*40)
+
+# does it leak out from a generator function?
+def generate_triple(x):
+    x *= 3
+    yield x
+    # now uses retained x
+    yield x * 3
+
+# testing...
+gt = generate_triple(x)
+while True:
+  try:
+      print(next(gt))
+  except StopIteration:
+      break
+'''
+231
+693
+'''    
+
+# testing...
+print(x)  # 77  no leak
+
+print("="*40)
+
+# generator expression
+gx = (x for x in range(4))
+
+# testing...
+while True:
+  try:
+      print(next(gx))
+  except StopIteration:
+      break
+
+'''
+0
+1
+2
+3
+'''
+
+# testing...
+print(x)  # 77  no leak
 
 print("="*40)
 
