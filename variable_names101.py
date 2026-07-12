@@ -9,7 +9,7 @@ It is good practice to start a function name with a small cap verb.
 Parameters/arguments are passed to a function by reference and 
 become local to the function, unless declared global.
 
-Class names are Capitlized by convention.
+Class names are Capitalized by convention.
 
 a convenience template...
 
