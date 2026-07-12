@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """ names_keywords.py
 
-Show all builtin functions/methods and keywords
+Show all builtin Python and keywords;
 avoid using any of those names for your variables, or
 you will get conflicts, usually get an error flag!
 
