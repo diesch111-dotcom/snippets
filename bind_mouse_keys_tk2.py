@@ -25,7 +25,7 @@ root.bind("<Button-4>", mouse_wheel)
 root.bind("<Button-5>", mouse_wheel)
 
 
-tested using the Spyder IDE on Linux  dns(vegaseat)  11jul2026
+tested using the Spyder IDE on Linux  dns aka vegaseat  11jul2026
 """
 
 import tkinter as tk
