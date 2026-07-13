@@ -27,8 +27,9 @@ mf = "C7H4Cl2O2"
 
 This program should take either approach.
 
+btw: I love to eat out in LV hence the name vegas eat
 
-using the Spyder IDE on Linux  dns(vegaseat) 4jul2026
+using the Spyder IDE on Linux  dns aka vegaseat 4jul2026
 """
 
 from collections import defaultdict
