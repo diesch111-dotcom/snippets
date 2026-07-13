@@ -16,7 +16,9 @@ If you've ever written a custom class just to hold data, you know the drill:
 (double underline also known as "dunter")
 vars() function returns the __dict__ attribute of an object/instance
 
-works with LinuxMint and Spyder IDE  dns(vegaseat)  15jun2026
+btw: I love to eat out in LV hence the name vegas eat
+
+works with LinuxMint and Spyder IDE  dns aka vegaseat  15jun2026
 """
 
 # needs Python 3.7+
