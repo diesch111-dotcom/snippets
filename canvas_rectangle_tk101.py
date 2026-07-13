@@ -32,7 +32,7 @@ lightgreen, moccasin, peachpuff, orange, grey, purple, brown
 also (light=1 to dark=4) hues of colors like
 red1, red2, red3, red4   etc.
 
-tested with LinuxMint and Spyder IDE  dns(vegaseat)  19jun2026
+tested with LinuxMint and Spyder IDE  dns aka vegaseat  19jun2026
 """
 
 import tkinter as tk
