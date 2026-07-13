@@ -28,7 +28,7 @@ eg.
 name_list_g = [name for name, hex, tup in color_list if name.startswith('g')]
 
 
-tested using LinuxMint and Spyder IDE  dns(vegaseat)  03jul2026
+tested using LinuxMint and Spyder IDE  dns aka vegaseat  03jul2026
 """
 
 # list of name, '#rrggbb', (r, g, b)
