@@ -6,7 +6,9 @@ A handy snippet to quickly search all the .py code files in a
 directory/folder for a segment of code. Just put this little 
 ik utility into a folder and run it.  I use it a lot!
 
-using the Spyder IDE on Linux  dns(vegaseat) 7jul2026
+btw: I love to eat out in LV hence the name vegas eat
+
+using the Spyder IDE on Linux  dns aka vegaseat 7jul2026
 """
 
 import glob
@@ -17,6 +19,7 @@ import os
 search = ".after"
 
 # use current working directory to look at all python code files
+# change  "*.py" to "*.txt" to look at all the .txt text files etc.
 directory = os.path.join(os.getcwd(), "*.py")
 
 path_list = []
