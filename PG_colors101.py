@@ -15,8 +15,9 @@ in the Linux terminal type:
 sudo apt-get install python3-pygame 
 to get pygame installed if needed 
 
+btw: I love to eat out in LV hence the name vegas eat
 
-tested using Spyder or Sublime IDE on Linux  dns(vegaseat)  9jul2026
+tested using Spyder or Sublime IDE on Linux  dns aka vegaseat  9jul2026
 """
 
 import pygame as pg
