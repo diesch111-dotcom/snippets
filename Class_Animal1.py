@@ -7,7 +7,9 @@ to keep methods private, prefix with a double underline only
 the @dataclass decorator simplifies the class construct
 vars() function returns the __dict__ attribute of an instance
 
-works with LinuxMint and Spyder IDE  dns(vegaseat)  15jun2026
+btw: I love to eat out in LV hence the name vegas eat
+
+works with LinuxMint and Spyder IDE  dns aka vegaseat  15jun2026
 '''
 
 # needs Python 3.7+
