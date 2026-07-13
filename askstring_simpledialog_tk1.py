@@ -1,8 +1,9 @@
 ''' askstring_simpledialog_tk1.py
-use Tkinter's simpledialog to ask for input
-dialogs are askfloat, askinteger, and askstring
-expects you to enter a float, an integer or a string respectively
-will prompt until correct
+
+Use Tkinter's simpledialog to ask for user input.
+The dialogs are askfloat, askinteger, and askstring.
+Expects you to enter a float, an integer or a string respectively
+and will prompt until correct.
 
 initialvalue, minvalue and maxvalue are optional
 if you enter an integer, it will be converted to a float
@@ -15,7 +16,7 @@ tksd.askinteger(title, prompt, initialvalue=None,
     minvalue=None, maxvalue=None, parent=None)
 
 tksd.askstring(title, prompt, initialvalue=None)
-initialvalue can be used to show a result too
+initialvalue can be used to show a short result too
 
 docs
 https://docs.python.org/3/library/dialog.html
@@ -23,7 +24,7 @@ https://tkdocs.com/shipman/message.html
 https://tkdocs.com/shipman/tkMessageBox.html
 https://docs.python.org/3/library/tkinter.html
 
-simple dialogs are:
+Again, simple dialogs are:
 askfloat(), askinteger(), and askstring()
 
 messagebox dialogs are:
@@ -44,7 +45,7 @@ age = tu.numinput("Age", "How old are you:", minval=0, maxval=150)
 
 using LinuxMint with Python3 and Python3-tk installed
 works nicely with Sublime and Spyder IDE
-dns (vegaeat)  25apr2026
+dns aka vegaseat  25apr2026
 '''
 
 # Python3
