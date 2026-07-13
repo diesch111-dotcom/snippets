@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """ PIL_SirpinskiTree1.py
 
 Draw a SirpinskiTree
@@ -7,6 +9,16 @@ Now called Pillow, a modern, actively maintained fork of PIL
 Colors can be given as color name strings
 
 Works seamlessly with Python's tkinter GUI
+
+Notice:
+The online C compiler at:
+https://www.onlinegdb.com/online_c_compiler#
+also runs Python3.  I use it on FireFox to test several computer languages.
+(select Python 3 from dropdown menu in upper left corner)
+For GUI fans: that Python version comes with tkinter and PIL installed!
+Save the picture by clicking the right mouse button on it for a menu.
+A little fickle at times on repeats.  This program happens to works okay!
+
 
 On a Linux terminal use ...
 sudo apt-get install python3-pillow

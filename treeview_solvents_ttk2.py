@@ -12,6 +12,15 @@ docs
 https://docs.python.org/3/library/tkinter.ttk.html
 https://tkdocs.com/shipman/ttk-Treeview.html
 
+Notice:
+The online C compiler at:
+https://www.onlinegdb.com/online_c_compiler#
+also runs Python3.  I use it on FireFox to test several computer languages.
+(select Python 3 from dropdown menu in upper left corner)
+For GUI fans: that Python version comes with tkinter and PIL installed!
+Save the picture by clicking the right mouse button on it for a menu.
+A little fickle at times on repeats.  This program happens to works okay!
+Use 'run with display screen' option a dropdown under 'run'
 
 tested using LinuxMint and Spyder IDE  dns(vegaseat)  3jul2026
 """
@@ -65,6 +74,7 @@ to change width of column drag boundary
             # adjust column's width if necessary to fit each value
             for ix, val in enumerate(item):
                 col_w = tkFont.Font().measure(val)
+                print(ix, col_w, len(item))
                 if self.tree.column(solvent_header[ix], width=None) < col_w:
                     self.tree.column(solvent_header[ix], width=col_w)
 
