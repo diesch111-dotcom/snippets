@@ -7,7 +7,7 @@ https://docs.python.org/3/library/tkinter.html
 https://tkdocs.com/shipman/
 
 
-using the Spyder IDE on Linux  dns(vegaseat) 4jul2026
+using the Spyder IDE on Linux  dns aka vegaseat 4jul2026
 '''
 
 import tkinter as tk
