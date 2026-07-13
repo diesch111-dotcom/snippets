@@ -14,7 +14,7 @@ Colors can be given as color name strings.
 
 Works seamlessly with Python's tkinter GUI
 
-Notice:
+If your machine does not have Python installed, use this option...
 The online C compiler at:
 https://www.onlinegdb.com/online_c_compiler#
 also runs Python3.  I use it on FireFox to test several computer languages.

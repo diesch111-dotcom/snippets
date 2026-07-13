@@ -12,7 +12,7 @@ docs
 https://docs.python.org/3/library/tkinter.ttk.html
 https://tkdocs.com/shipman/ttk-Treeview.html
 
-Notice:
+If your machine does not have Python installed, use this option...
 The online C compiler at:
 https://www.onlinegdb.com/online_c_compiler#
 also runs Python3.  I use it on FireFox to test several computer languages.

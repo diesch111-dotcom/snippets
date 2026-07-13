@@ -11,7 +11,7 @@ The Pudding:
 According to research at some English University, it doesn't matter
 in what order the letters in a word are, the only important thing is
 that the first and last letters be in the right places. The rest can
-be a total mess and you can still read it without problem. This is
+be a total mess and you can still read it without problems. This is
 because the human mind does not read every letter by itself, but
 the word as a whole.
 
@@ -23,7 +23,7 @@ it into your e-mail. Leave the Dear... and Yours.. lines alone!
 
 See how the Zuckerberg Privacy Invaders (ZPI) deal with it!
 
-Notice:
+If your machine does not have Python installed, use this option...
 The online C compiler at:
 https://www.onlinegdb.com/online_c_compiler#
 also runs Python3.  I use it on FireFox to test  several computer languages.
@@ -102,6 +102,12 @@ if __name__ == '__main__':
     Hopefully you have the power to classify this as business meeting so 
     the alcoholic drinks will be free.
     """
+    
+    text2 = """
+    Sorry about all that misspelling!  I dearly hope you can can read this 
+    rather private e-mail!  I dug up an old Python code snippet I called 
+    ‘Miss_Peller.py’ very interesting potential application with a smile.
+    """
  
     goof = Misspell()
     print('Misspelled but still very readable:')
@@ -119,4 +125,29 @@ I mkae cretain taht Aleaxnder Himmlesburg wlil be inivted too.
 Hpoefully you hvae the pwoer to clsasify tihs as busniess meteing so 
 the alcohloic dirnks wlil be fere.
     
+'''
+
+''' just think...
+
+The Spell Checker Poem ...
+
+Eye halve a spelling chequer
+It came with my pea sea
+It plainly marques four my revue
+Miss steaks eye kin knot sea.
+ 
+Eye strike a key and type a word
+And weight four it two say
+Weather eye am wrong oar write
+It shows me strait a weigh.
+As soon as a mist ache is maid
+It nose bee fore two long
+And eye can put the error rite
+Its rare lea ever wrong.
+ 
+Eye have run this poem threw it
+I am shore your pleased two no
+its letter perfect awl the weigh
+My chequer tolled me sew.
+
 '''

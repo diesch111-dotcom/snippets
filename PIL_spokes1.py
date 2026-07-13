@@ -1,3 +1,6 @@
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' PIL_spokes1.py
 
 Draw a 'fractal' ball using PIL, kind of artsy-fartsy!
@@ -14,13 +17,13 @@ see
 https://pillow.readthedocs.io/en/stable/reference/Image.html
 https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html
 
-Notice:
+If your machine does not have Python installed, use this option...
 The online C compiler at:
 https://www.onlinegdb.com/online_c_compiler#
-also runs Python3.  I use it on FireFox to test  several computer languages.
+also runs Python3.  I use it on FireFox to test several computer languages.
 (select Python 3 from dropdown menu in upper left corner)
 For GUI fans: that Python version comes with tkinter and PIL installed!
-Save the picture clicking the right mouse button on it.
+Save the picture by clicking the right mouse button on it for a menu.
 A little fickle at times on repeats.  This program happens to works okay!
 
 
