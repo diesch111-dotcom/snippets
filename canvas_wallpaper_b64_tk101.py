@@ -5,7 +5,6 @@
 use a base64 encoded string of a .gif or .png image to wallpaper a Tkinter 
 canvas (handy for relatively small >2k image files)
 
-
 create base64 image string with:
 pick a GIF or PNG image file you have in the working directory
 or give the full path,  for instance ...
@@ -15,9 +14,9 @@ img_file = "../image/tile/BG_honey.gif"
 b64 = base64.encodebytes(open(img_file,"rb").read())
 print("bg_honey_gif_b64='''\\\n" + b64.decode("utf8") + "'''")
 
+btw: I love to eat out in LV hence the name vegas eat
 
-
-tested with LinuxMint and Spyder IDE  dns(vegaseat)  19jun2026
+tested with LinuxMint and Spyder IDE  dns aka vegaseat  19jun2026
 """
 
 # created with Base64encGIF_py23.py
