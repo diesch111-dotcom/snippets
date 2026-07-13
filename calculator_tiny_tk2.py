@@ -4,7 +4,9 @@ don't have a zero leading a number, python thinks it is an octal number
 
 a 'vegaseat' oldie from 2015
 
-tested with LinuxMint and Spyder IDE  dns(vegaseat)  17jun2026
+btw: I love to eat out in LV hence the name vegas eat
+
+tested with LinuxMint and Spyder IDE  dns aka vegaseat  17jun2026
 '''
 
 # 'tkinter' in Python3, for Python2 use 'Tkinter'
