@@ -9,6 +9,8 @@ The Spyder IDE 'New File...' command creates the 2 leading Shebang/Hashbang
 lines that tell a Unix based system about Python3 location and which codex 
 to use, it also adds a triple quote comment area ---  nice!
 
+btw: I love to eat out in LV hence the name vegas eat
+
 tested using the Spyder IDE on Linux  dns aka vegaseat 4jul2026
 """
 
