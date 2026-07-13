@@ -10,6 +10,19 @@ Works seamlessly with Python's tkinter GUI
 
 this code adopted from:
 http://www.math.union.edu/research/fractaltrees/
+see
+https://pillow.readthedocs.io/en/stable/reference/Image.html
+https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html
+
+Notice:
+The online C compiler at:
+https://www.onlinegdb.com/online_c_compiler#
+also runs Python3.  I use it on FireFox to test  several computer languages.
+(select Python 3 from dropdown menu in upper left corner)
+For GUI fans: that Python version comes with tkinter and PIL installed!
+Save the picture clicking the right mouse button on it.
+A little fickle at times on repeats.  This program happens to works okay!
+
 
 On a Linux terminal use ...
 sudo apt-get install python3-pillow
@@ -48,7 +61,8 @@ if __name__ == '__main__':
     width = 600
     height = 350
     # number of triangles, use 1 to 16 ...
-    n = 9
+    # I swear n=18 shows a picture of christ?
+    n = 10
     image1 = draw_spokes(width, height, n)
     
     """

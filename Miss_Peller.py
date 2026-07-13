@@ -26,8 +26,9 @@ See how the Zuckerberg Privacy Invaders (ZPI) deal with it!
 Notice:
 The online C compiler at:
 https://www.onlinegdb.com/online_c_compiler#
-also runs Python3.  I use it on FireFox to test  several ccomputer languages.
+also runs Python3.  I use it on FireFox to test  several computer languages.
 (select Python 3 from dropdown menu in upper left corner)
+A little fickle at times on repeats.  This program happens to works okay!
 
 I call this program "Miss_Peller.PeeWhy"
 
