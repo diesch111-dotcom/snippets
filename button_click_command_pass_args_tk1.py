@@ -75,8 +75,6 @@ button4 = tk.Button(
     text="press me",
     command=change_color)
 
-# left mouse button click action
-#button4.bind('<Button-1>', change_color)
 
 # use the pack() layout manager to position the widgets
 # default is top down in the center
