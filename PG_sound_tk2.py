@@ -15,7 +15,7 @@ curious fact:
 in the LinuxMint terminal type:  python3 -m tkinter
 to get a small tkinter window showing the version of tkinter you have
 
-tested with LinuxMint and Spyder IDE  dns(vegaseat)  17jun2026
+tested with LinuxMint and Spyder IDE  dns aka vegaseat  17jun2026
 '''
 
 import pygame as pg
