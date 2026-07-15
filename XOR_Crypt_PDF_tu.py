@@ -16,7 +16,7 @@ listed .pdfz files will be decrypted to .pdf files
 as a SYA measure:
 the original files will not be deleted, but changed to .pdf3 (still function)
 
-Now send off the encrypted .pdfz files and this little program
+Now send off the encrypted .pdfz file or files and this little program
 Keep the originals in a safe place!!
 
 Uses turtle textinput() for the password input that the Sublime Text IDE 
