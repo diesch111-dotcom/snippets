@@ -77,13 +77,13 @@ combo.bind('<<ComboboxSelected>>', selection_changed)
 # set the initial pasta
 combo.set(pasta_list[0])
 
-# shows possible options for the ttk.Cobobox() widget
+# shows possible options for the ttk.Combobox() widget
 import pprint
 pprint.pprint(combo.keys())
 
 root.mainloop()
 
-''' possible options for ttk.Cobobox() ...
+''' possible options for ttk.Combobox() ...
 ['height',
  'postcommand',
  'values',
