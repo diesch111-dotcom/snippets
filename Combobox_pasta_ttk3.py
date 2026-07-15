@@ -13,7 +13,7 @@ Combobox, Notebook, Progressbar, Separator, Sizegrip and Treeview
 docs
 https://tkdocs.com/shipman/
 https://tkdocs.com/shipman/ttk-Combobox.html
-
+Maybe helpfull for planing your next dinner!
 
 tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
 '''
