@@ -13,7 +13,10 @@ xor encrypt/decrypt all pdf/pdfz data files in a given directory.
 creates proper extension .pdf or .pdfz
 listed .pdf files will be encrypted to .pdfz files
 listed .pdfz files will be decrypted to .pdf files
-the original files will be deleted
+the original files will not be deleted
+
+Now send off the encrypted .pdfz files and this little program
+Keep the originals in a safe place!!
 
 Uses turtle textinput() for the password input that the Sublime Text IDE 
 can handle.
@@ -26,9 +29,10 @@ his or her Birth Year; the hint given would be FFBY.
 So let's say your friend's name is Carl May born in 1987 then the password
 is CarlMay1987.
 
-I hope your first best friend was not the famous Bonefacius Kiesewetter. 
+I hope your first best friend was not the famous Bonefacius Kiesewetter.
 
-tested using the Spyder IDE on Linux  dns aka vegaseat  9jul2026
+
+tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
 '''
 
 import operator
@@ -62,9 +66,6 @@ def pdf_to_pdfz(list_pdf, password):
             except TypeError:
                 # Python3 stuff
                 fout.write(x_text.encode('latin'))
-        # .pdfz has been written, remove .pdf file
-        os.remove(fname)
-    print("\nAll .pdf files in directory deleted")
     print('='*40)
     for path in glob.glob("*.pdfz"):
         dirname, filename = os.path.split(path)
@@ -90,9 +91,6 @@ def pdfz_to_pdf(list_pdfz, password):
             except TypeError:
                 # Python3 stuff
                 fout.write(text.encode('latin'))
-        # .pdf has been written, remove .pdfz file
-        os.remove(fname)
-    print("\nAll .pdfz files in directory deleted")
     print('='*40)
     for path in glob.glob("*.pdf"):
         dirname, filename = os.path.split(path)
