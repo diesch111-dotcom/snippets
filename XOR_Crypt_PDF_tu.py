@@ -13,7 +13,8 @@ xor encrypt/decrypt all pdf/pdfz data files in a given directory.
 creates proper extension .pdf or .pdfz
 listed .pdf files will be encrypted to .pdfz files
 listed .pdfz files will be decrypted to .pdf files
-the original files will not be deleted
+as a SYA measure:
+the original files will not be deleted, but changed to .pdf3 (still function)
 
 Now send off the encrypted .pdfz files and this little program
 Keep the originals in a safe place!!
@@ -32,7 +33,7 @@ is CarlMay1987.
 I hope your first best friend was not the famous Bonefacius Kiesewetter.
 
 
-tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
+tested using the Spyder or Sublime Text IDE   dns aka vegaseat  13jul2026
 '''
 
 import operator
@@ -40,6 +41,13 @@ import glob
 import os
 import pprint
 
+
+def file_exists(filename):
+    '''check if a file exists'''
+    try:
+        with open(filename): return True
+    except:
+        return False
 
 def create_outfile(filename):
     if filename.endswith('.pdf') or filename.endswith('.PDF'):
@@ -84,6 +92,20 @@ def pdfz_to_pdf(list_pdfz, password):
             x_text = x_text.decode('latin')
         text = xor_crypt2(x_text, password)
         fname_out = create_outfile(fname)
+        # change the extension of an existing .pdf to .pdf3 
+        if file_exists(fname_out):
+            ext = fname_out[-3:]
+            base = fname_out[:-3]
+            # add a 3 to the extension
+            ext3 = ext + '3'
+            new_fname = base + ext3
+            with open(new_fname, "wb") as fout:
+                try:
+                    fout.write(text)
+                except TypeError:
+                    # Python3 stuff
+                    fout.write(text.encode('latin'))       
+        
         #print(fname, fname_out)  # test
         with open(fname_out, "wb") as fout:
             try:
