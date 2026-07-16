@@ -6,11 +6,10 @@ where rect is a rectangle with given corner ULC and LRC coordinates
 if it's a square a circle is drawn, otherwise an oval is drawn,
 use width=0 to avoid a border
 
-create some helper functions:
+create some helper functions (let center be point x, y)
 get_center(x1, y1, x2, y2)
-get_square(x, y, radius)
+get_square(center, radius)
 draw_circle(center, radius, color=None, width=0) 
-draw_circle2(x, y, radius, color=None, width=0) 
 
 to animate a circle use...
 cv.move(obj, xAmount, yAmount)
