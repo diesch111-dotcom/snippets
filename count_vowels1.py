@@ -1,6 +1,7 @@
 ''' count_vowels1.py
 using class Counter to count vowels in a text
 
+update is count_vowels2.py gives clearer mostcomon() result
 
 works with LinuxMint and Spyder IDE  dns(vegaseat)  15jun2026
 '''
