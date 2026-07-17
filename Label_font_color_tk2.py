@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' Label_font_color_tk2.py
 
 Explore Tkinter's tk.Label() widget fonts, background and text colors
@@ -21,7 +23,7 @@ cosa24b = ('Comic Sans MS', 24, 'bold')
 helv16b = ('helvetica', 16, 'bold')
 arial25n = ['Arial' , 25]
 'normal' is the default
-
+Linux will pick work_alikes if possible
 
 tested with LinuxMint and Spyder IDE  dns aka vegaseat  4jul2026
 '''
