@@ -1,8 +1,11 @@
 ''' count_vowels2.py
 
 Using class Counter to count vowels in a text.
+In the English Literature the vowel frequency is in this order:
+ e a o i u
 
-btw: I love to eat out in LV, hence the name vegas eat
+I wonder what the least used key is on a typical keyboard?
+btw: I loved to eat out in LV, hence the name vegas eat
 
 works with LinuxMint and Spyder IDE  vegaseat  15jun2026
 '''
