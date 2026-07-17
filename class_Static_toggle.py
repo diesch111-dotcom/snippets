@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' class_Static_toggle.py
 
 A class to allow you to toggle between True and False.
