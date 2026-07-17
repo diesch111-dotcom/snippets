@@ -8,6 +8,7 @@ The neat way to go about.
 English literature 12 most common letter frequency order is:
 e  t  a  o  i  n  s  h  r  d  l  u
 
+https://github.com/diesch111-dotcom/snippets.git
 tested using Linux and Spyder IDE  vegaseat  17jul2026
 '''
 
