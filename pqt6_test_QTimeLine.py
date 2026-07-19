@@ -3,7 +3,7 @@
 Testing PyQt's QProgressBar() and QTimeLine()
 
 
-If need be use use the Linux Software Manager to inststall Python3-pyqt6
+If need be use use the Linux Software Manager to install Python3-pyqt6
 
 tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
 '''

@@ -3,7 +3,7 @@
 A very simple template to test PyQt widgets
 
 
-If need be use the Linux Software Manager to inststall Python3-pyqt6
+If need be use the Linux Software Manager to install Python3-pyqt6
 
 tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
 '''
