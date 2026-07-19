@@ -14,7 +14,7 @@ QSlider.TicksRight	Draw tick marks to the right of the (vertical) slider
 tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
 '''
 
-# wildcards okay for testung...
+# wildcards okay for testing...
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
 from PyQt6.QtWidgets import *
