@@ -2,6 +2,11 @@
 
 Click a button to play sound and stop sound
 The pygame module handles the sound for tkinter
+Will play  MP3, WAV, OGG, MIDI etc.
+
+If you need the optiom to stop the play use
+def play2(sound)
+def stop(sound)
 
 docs
 https://docs.python.org/3/library/tkinter.html
@@ -20,6 +25,7 @@ tested with LinuxMint and Spyder IDE  dns aka vegaseat  17jun2026
 
 import pygame as pg
 import tkinter as tk
+import os
 
 
 def play1(sound):
@@ -52,11 +58,18 @@ root.title("pick a button to play a sound via pygame")
 # background color of the root window
 root['bg'] = 'gold'
 
-# pick a wave (.wav) sound file you have in the working directory
-# or give file path
-#sound_file = "../sound/DingDong.wav"
-sound_file = "../sound/thunder.wav"
-#sound_file = "../sound/nono.wav"
+#LinuxMint:
+os.chdir("/home/dietrich/Music/sound")
+
+# pick a wave sound file you have MP3, WAV, OGG, MIDI etc.
+# Linux filenames are case sensitive
+# comment out filenames as needed, will play last uncommented file
+#sound_file = ""
+sound_file = "Mir ham's vom Sauerkraut.mp3"
+sound_file = "ChancesAre.MID"
+#sound_file = "DingDong.wav"
+sound_file = "thunder.wav"
+sound_file = "nono.wav"
 
 FREQ = 18000   # play with this for best sound
 BITSIZE = -16  # here unsigned 16 bit
