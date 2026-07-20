@@ -20,6 +20,8 @@ in the LinuxMint terminal type:
 sudo apt-get install python3-pygame  
 to get pygame installed if need be
 
+btw: Linux 'Rhythmbox' plays most soundfiles including midi files.
+
 works with the Spyder IDE  on LinuxMint OS    vegaseat  15jun2026
 '''
 
