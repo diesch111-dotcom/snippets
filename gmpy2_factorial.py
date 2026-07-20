@@ -11,7 +11,7 @@ Advanced Number Theory: It comes out of the box with highly optimized
 functions for primality testing (is_prime), greatest common divisors (gcd), 
 modular inverse, and factorials.  
 
-use Linux Software Manager ti install  Python3-gmpy2
+use Linux Software Manager to install  Python3-gmpy2
  
 tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
 '''
