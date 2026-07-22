@@ -137,8 +137,8 @@ print("{} has been written".format(fname_copy))
 
 # for large files read and write in chunks (eg. 1k chunks)
 chunk = 1024
-filename_in = "/home/dietrich/Pictures/image/jpg/Beach07.jpg"
-filename_copy = "/home/dietrich/Pictures/image/jpg/Beach07_copy.jpg" 
+filename_in = "/home/admin123/Pictures/image/jpg/Beach07.jpg"
+filename_copy = "/home/admin123/Pictures/image/jpg/Beach07_copy.jpg" 
 with open(filename_in, "rb") as fin:
     # will create a new file if it does not exist
     # otherwise it will overwrite the existing file
