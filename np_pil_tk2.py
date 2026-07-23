@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 ''' np_pil_tk2.py
 
-create an image array and save via PIL
+create an image array and save via PIL, show via tkinter
 
 doc
 https://scipy.github.io/old-wiki/pages/Numpy_Example_List_With_Doc.html
