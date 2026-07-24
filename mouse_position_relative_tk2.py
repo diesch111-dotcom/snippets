@@ -6,7 +6,9 @@ Show xy coordinates of mouse click position
 relative to root:
 event.x, event.y
 or relative within a given canvas shape:
-event.x - x1, event.y - y1  needs ULC (x1, y1) of widget   
+event.x - x1, event.y - y1  needs ULC (x1, y1) of widget  
+event.x_root, event.y_root relative to root window x_offset, y_offset
+It is y_offset + thickness of title bar in pixels
 
 tested with LinuxMint and Spyder IDE   vegaseat  17jul2026
 '''
