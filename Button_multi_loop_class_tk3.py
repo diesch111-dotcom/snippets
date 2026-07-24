@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' Button_multi_loop_class_tk3.py
 
 Exploring Tkinter buttons
