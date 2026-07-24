@@ -2,10 +2,9 @@
 # -*- coding: utf-8 -*-
 """ Global_Class.py
 
-Using a class to give all global variables a 'safe' namespace
+Using a class to give all global variables a safe namespace
 
-
-tested using the Spyder IDE on Linux  dns(vegaseat)  11jul2026
+tested with LinuxMint and Spyder IDE   vegaseat  17jul2026
 """
 
 # a class to the rescue, to give all global variables a namespace
@@ -15,26 +14,20 @@ class GlobalClass(object):
     z = False
 
 # now all global variables get a namespace (the class instance)
-# use something like 'ww' (from WorldWide) for a recognizable 
-# namespace 'ww.' for global variables
+# use something like ww (from WorldWide) for a recognizable 
+# namespace for global variables
 ww = GlobalClass()
 
 def incr_wwx() :
-    """ww.x changes, but is not declared global"""
+    """ww.x changes, but does not have to be declared global"""
     ww.x += 1
     return ww.x
 
 # testing...
 print(incr_wwx())  # 1
 print(incr_wwx())  # 2
-print(incr_wwx())  # 3
-
-print(ww.x)  # 3
-print(ww.z)  # False
+print (incr_wwx())  # 3
 
 #print(globals())
 print("="*40)
 #print(vars())
-
-# curious...
-[print(k) for k, v in globals().items() if k.startswith("ww")]
