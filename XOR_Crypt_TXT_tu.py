@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-''' XOR_Crypt_PDF_tu.py
+''' XOR_Crypt_TXT_tu.py
 
-I usually end up with quite a number of PDF files that contain financial
+I usually end up with quite a number of TXT files that contain financial
 data that some privacy invaders could abuse.  So I have been using this
 relatively short Python program that I put into a sub_folder created for
-just those .pdf files I want to protect with encryption.  Run the program
+just those .txt files I want to protect with encryption.  Run the program
 once to encrypt, later run it again to decrypt, short and sweet!
 
-xor encrypt/decrypt all pdf/pdfz data files in a given directory.
+xor encrypt/decrypt all txt/txtz data files in a given directory.
 
-creates proper extension .pdf or .pdfz
-listed .pdf files will be encrypted to .pdfz files
-listed .pdfz files will be decrypted to .pdf files
+creates proper extension .txt or .txtz
+listed .txt files will be encrypted to .txtz files
+listed .txtz files will be decrypted to .txt files
 
-Now send off the encrypted .pdfz file or files and this little program
+Now send off the encrypted .txtz file or files and this little program
 Keep the originals in a safe place!!
 
 Uses turtle textinput() for the password input that the Sublime Text IDE 
 can handle.
 
-For initial testing create a subfolder with a number of test .pdf data files
+For initial testing create a subfolder with a number of test .txt data files
 (make sure you have backups of these files until you got the hang of it)
 
 I recommend a password consisting of your First Friend's name followed by
@@ -29,7 +29,7 @@ So let's say your friend's name is Carl May born in 1987 then the password
 is CarlMay1987.
 
 I hope your first best friend was not the famous Bonefacius Kiesewetter.
-
+(a lot of typimg here)
 
 tested using the Spyder or Sublime Text IDE   dns aka vegaseat  13jul2026
 '''
@@ -48,15 +48,15 @@ def file_exists(filename):
         return False
 
 def create_outfile(filename):
-    if filename.endswith('.pdf') or filename.endswith('.PDF'):
-        return filename[:-4] + '.pdfz'
-    elif filename.endswith('.pdfz'):
-        return filename[:-5] + '.pdf'
+    if filename.endswith('.txt'):
+        return filename[:-4] + '.txtz'
+    elif filename.endswith('.txtz'):
+        return filename[:-5] + '.txt'
 
-def pdf_to_pdfz(list_pdf, password):
-    sf = "Encrypting all {} .pdf files to .pdfz files"
-    print(sf.format(len(list_pdf)))    
-    for fname in list_pdf:
+def txt_to_txtz(list_txt, password):
+    sf = "Encrypting all {} .txt files to .txtz files"
+    print(sf.format(len(list_txt)))    
+    for fname in list_txt:
         with open(fname, "rb") as fin:
             text = fin.read()
         # Python2 uses str and Python3 uses bytes
@@ -75,18 +75,18 @@ def pdf_to_pdfz(list_pdf, password):
             except TypeError:
                 # Python3 stuff
                 fout.write(x_text.encode('latin'))
+    #print('='*40)
+    print("\nAll .txt files in directory deleted")
     print('='*40)
-    print("\nAll .pdf files in directory deleted")
-    print('='*40)
-    for path in glob.glob("*.pdfz"):
+    for path in glob.glob("*.txtz"):
         dirname, filename = os.path.split(path)
         print(filename)
     print('='*40)
 
-def pdfz_to_pdf(list_pdfz, password):
-    sf = "Encrypting all {} .pdfz files to .pdf files"
-    print(sf.format(len(list_pdfz)))
-    for fname in list_pdfz:
+def txtz_to_txt(list_txtz, password):
+    sf = "Encrypting all {} .txtz files to .txt files"
+    print(sf.format(len(list_txtz)))
+    for fname in list_txtz:
         with open(fname, "rb") as fin:
             x_text = fin.read()
         # Python2 uses str and Python3 uses bytes
@@ -95,9 +95,9 @@ def pdfz_to_pdf(list_pdfz, password):
             x_text = x_text.decode('latin')
         text = xor_crypt2(x_text, password)
         fname_out = create_outfile(fname)
-        # .pdf has been written, remove .pdfz file
+        # .txt has been written, remove .txtz file
         os.remove(fname)
-        
+
         #print(fname, fname_out)  # test
         with open(fname_out, "wb") as fout:
             try:
@@ -105,10 +105,10 @@ def pdfz_to_pdf(list_pdfz, password):
             except TypeError:
                 # Python3 stuff
                 fout.write(text.encode('latin'))
-    print('='*40)            
-    print("\nAll .pdfz files in directory deleted")
+    #print('='*40)
+    print("\nAll .txtz files in directory deleted")
     print('='*40)
-    for path in glob.glob("*.pdf"):
+    for path in glob.glob("*.txt"):
         dirname, filename = os.path.split(path)
         print(filename)
     print('='*40)
@@ -120,7 +120,7 @@ def xor_crypt2(text, password):
     xlist = []
     n = 0
     k = 0
-    offset = 0  # ignore jpg header (usually ca. 180 bytes)
+    offset = 0
     for c in text:
         # loop through password start to end and repeat
         if n >= len(password) - 1:
@@ -142,7 +142,7 @@ def xor_crypt2(text, password):
     return text_out
 
 
-# pick a directory with a number of .pdf data files for testing
+# pick a directory with a number of .txt data files for testing
 # make sure you have backups of these files just in case
 directory = os.getcwd()
 # make it the working directory
@@ -157,20 +157,20 @@ tu.Screen().setup(15, 15)
 # string input
 password = tu.textinput("Password", "Password (hint: FFBY): ")
 
-# create a list of all .pdf files in a given directory
-list_pdf = []
-for path in glob.glob("*.pdf"):
+# create a list of all .txt files in a given directory
+list_txt = []
+for path in glob.glob("*.txt"):
     dirname, filename = os.path.split(path)
-    list_pdf.append(filename)
+    list_txt.append(filename)
 
-# create a list of all .pdfz files in a given directory
-list_pdfz = []
-for path in glob.glob("*.pdfz"):
+# create a list of all .txtz files in a given directory
+list_txtz = []
+for path in glob.glob("*.txtz"):
     dirname, filename = os.path.split(path)
-    list_pdfz.append(filename)
+    list_txtz.append(filename)
 
-if list_pdf:
-    pdf_to_pdfz(list_pdf, password)
+if list_txt:
+    txt_to_txtz(list_txt, password)
 
-if list_pdfz:
-    pdfz_to_pdf(list_pdfz, password)
+if list_txtz:
+    txtz_to_txt(list_txtz, password)
