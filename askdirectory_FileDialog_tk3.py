@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 ''' askdirectory_FileDialog_tk3.py
 
-this code will start at the working direcory as 'initialdir'
+This code will start at the working direcory as 'initialdir' to be more generic
 then you can use the upper right side 'green' symbol to work back levels
 
 double click the directory selected
 further double clicks will bring up any subdirectories
-single click gets the apecfied initialdir
+single click gets the specfied initialdir
 
-Use Tkinter's filedialog
+Use Tkinter's filedialog...
 to get a directory, get a filename or file handle
 tkfd.askdirectory(**options) returns directory name
 after the directory has been selected use...
@@ -27,6 +27,7 @@ tested using the Spyder IDE on Linux  vegaseat  19jul2026
 import tkinter as tk
 import tkinter.filedialog as tkfd
 import os
+# get working directory
 basedir = os.getcwd()
 
 # use the 2 lines below for inclusion into programs
