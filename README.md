@@ -1,4 +1,1 @@
-A lightsome look at Python code examples like
-'treeview_solvents_ttk2.py' is downright utile 
-and 'ttk_NoteBook2_lists.py' can organize and market data well  
-'search_codefile2.py' is a danty
+One can put a lot of utility into a relatively small python snippet and park that small (~1k)  code in a folder to give a slide show of selected image file types in that folder, or search that folder for a specified string in all the code files (darn fast too). Use your imagination, I try to help! 
