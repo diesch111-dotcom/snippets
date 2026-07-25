@@ -1,2 +1,2 @@
-One can put a lot of utility into a relatively small python snippet and park that small (~2k)  code in a folder to give a slide show of selected image file types in that folder, or search that folder for a specified string in all the code files (darn fast too). Use your imagination, I try to help!  
+One can put a lot of utility into a relatively small python snippet and park that small (~2k)  code in a folder to give a slide show of selected image file types in that folder, or search that folder for a specified string in all the code files (darn fast too). Python has a lot of C and C++ under the hood! Use your imagination, I try to help!  
 Check: slide_show_images_folder_tk2.py or search_codefile2.py 
