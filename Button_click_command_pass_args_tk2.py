@@ -76,7 +76,6 @@ button4 = tk.Button(
     text="press me to cycle colors",
     command=change_color)
 
-
 # use the pack() layout manager to position the widgets
 # default is top down in the center
 button1.pack(padx=100, pady=10)
