@@ -14,12 +14,12 @@ raw_data = '''\
 1,Elon Musk,$839 billion,54,United States,Tesla and SpaceX
 2,Larry Page,$257 billion,52,United States,Google
 3,Sergey Brin,$237 billion,52,United States,Google
-4,Jeff Bezos,$224 billion,62	,United States,Amazon
+4,Jeff Bezos,$224 billion,62,United States,Amazon
 5,Mark Zuckerberg,$222 billion,41,United States,Meta Platforms
 6,Larry Ellison,$190 billion,81,United States,Oracle Corporation
 7,Bernard Arnault & family,$171 billion,77,France,LVMH
 8,Jensen Huang,$154 billion,63,Taiwan United States,Nvidia
-9,Warren Buffett,$149 billion,95	,United States,Berkshire Hathaway
+9,Warren Buffett,$149 billion,95,United States,Berkshire Hathaway
 10,Amancio Ortega,$148 billion,89,Spain,Indite'''
 
 
