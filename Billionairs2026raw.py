@@ -66,12 +66,12 @@ data_list = [
 ['Elon Musk', '839,000,000,000', '54', 'Tesla and SpaceX'],
 ['Larry Page', '257,000,000,000', '52', 'Google'],
 ['Sergey Brin', '237,000,000,000', '52', 'Google'],
-['Jeff Bezos', '224,000,000,000', '62\t', 'Amazon'],
+['Jeff Bezos', '224,000,000,000', '62', 'Amazon'],
 ['Mark Zuckerberg', '222,000,000,000', '41', 'Meta Platforms'],
 ['Larry Ellison', '190,000,000,000', '81', 'Oracle Corporation'],
 ['Bernard Arnault & family', '171,000,000,000', '77', 'LVMH'],
 ['Jensen Huang', '154,000,000,000', '63', 'Nvidia'],
-['Warren Buffett', '149,000,000,000', '95\t', 'Berkshire Hathaway'],
+['Warren Buffett', '149,000,000,000', '95', 'Berkshire Hathaway'],
 ['Amancio Ortega', '148,000,000,000', '89', 'Indite']
 ]
 ------------------------------------------------------------
@@ -79,11 +79,11 @@ data_list = [
 Elon Musk,$839.0 billion,54,Tesla and SpaceX
 Larry Page,$257.0 billion,52,Google
 Sergey Brin,$237.0 billion,52,Google
-Jeff Bezos,$224.0 billion,62	,Amazon
+Jeff Bezos,$224.0 billion,62,Amazon
 Mark Zuckerberg,$222.0 billion,41,Meta Platforms
 Larry Ellison,$190.0 billion,81,Oracle Corporation
 Bernard Arnault & family,$171.0 billion,77,LVMH
 Jensen Huang,$154.0 billion,63,Nvidia
-Warren Buffett,$149.0 billion,95	,Berkshire Hathaway
+Warren Buffett,$149.0 billion,95,Berkshire Hathaway
 Amancio Ortega,$148.0 billion,89,Indite
 '''
