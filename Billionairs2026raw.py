@@ -23,7 +23,7 @@ raw_data = '''\
 10,Amancio Ortega,$148 billion,89,Spain,Indite'''
 
 
-# a list of [name, wealth, age, source] lists
+# a list of [name, wealth, age, source] lists; skip nationality
 data_list = []
 for line in raw_data.split('\n'):
     #print(line.split(','))
