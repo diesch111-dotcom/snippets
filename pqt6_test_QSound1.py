@@ -6,7 +6,9 @@ Note: QSound() has been replaced in PyQt6 as the code below shows
 
 Also see  pqt6_QSoundEffect1.py
 
-That new hover-click mouse dreck will me quit snippeting! 
+Absolutely Hated 'Hover click'!!!
+LinuxMint:
+'System Settings' -->  'Accessibility' -->   'Mouse' --> 'Hover click'  off
 
 You need to have the much improved PyQt6.QtMultitest_media installed separately
 Using the Linux terminal type:
