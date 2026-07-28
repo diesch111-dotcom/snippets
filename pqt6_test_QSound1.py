@@ -4,11 +4,13 @@ a very simple template to test PyQT widgets
 just test QSound, no window is shown
 Note: QSound() has been replaced in PyQt6 as the code below shows 
 
-Linux 'Rhythmbox' plays most soundfiles including midi files.
+Also see  pqt6_QSoundEffect1.py
 
-You need to have the much improved PyQt6.QtMultimedia installed separately
-Usin the Linux terminal type:
-sudo apt-get install python3-PyQt6.QtMultimedia
+That new hover-click mouse dreck will me quit snippeting! 
+
+You need to have the much improved PyQt6.QtMultitest_media installed separately
+Using the Linux terminal type:
+sudot-get install python3-PyQt6.QtMultimedia
 
 tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
 '''
