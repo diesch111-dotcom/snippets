@@ -4,7 +4,7 @@
 
 Click the tk.Button() to cycle through a list of choices.
 
-tested using the Spyder IDE on Linux  vegaseat  19jul2026
+tested using the SublimeText IDE on LinuxMint  vegaseat  19jul2026
 """
 
 import tkinter as tk
