@@ -9,13 +9,13 @@ docs
 https://docs.python.org/3/library/tkinter.html
 https://tkdocs.com/tutorial/index.html
 https://tkdocs.com/shipman/
-https://tkdocs.com/shipman/button.html
+http  s://tkdocs.com/shipman/button.html
 
 curious fact:
 in the LinuxMint terminal type:  python3 -m tkinter
 to get a small tkinter window showing the version of tkinter you have
 
-tested with LinuxMint and Spyder IDE  vegaseat  20jul2026
+tested with LinuxMint and SublimeText IDE    vegaseat  20jul2026
 '''
 
 from functools import partial
