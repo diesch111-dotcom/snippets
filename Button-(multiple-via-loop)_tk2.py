@@ -6,7 +6,7 @@ Create multiple Tkinter buttons using list comprehension
 
 https://tkdocs.com/shipman/button.html
 
-tested with LinuxMint and Spyder IDE   vegaseat  17jul2026
+tested with LinuxMint and SublimeText IDE   vegaseat  17jul2026
 '''
 
 from functools import partial
