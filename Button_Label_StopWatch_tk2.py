@@ -12,8 +12,7 @@ Could add reset()
 in the Linux terminal type:  python3 -m tkinter
 to get a small tkinter window showing the version of tkinter
 
-
-tested using the SublimeText IDE on Linux   vegaseat  13jul2026
+tested using the SublimeText IDE on LinuxMint   vegaseat  13jul2026
 '''
 
 import tkinter as tk
