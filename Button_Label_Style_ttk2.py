@@ -18,8 +18,7 @@ https://docs.python.org/3/library/tkinter.html
 https://tkdocs.com/shipman/ttk-style-layer.html
 https://tkdocs.com/shipman/ttk-Button.html
 
-
-tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
+tested using the SublimeText IDE on Linux   vegaseat  13jul2026
 '''
 
 import tkinter as tk
