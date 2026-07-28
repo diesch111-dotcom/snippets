@@ -9,7 +9,6 @@ https://tkdocs.com/shipman/labelframe.html
 https://tkdocs.com/shipman/entry.html
 https://tkdocs.com/shipman/grid.html
 
-
 tested using the SublimeText IDE on Linux  vegaseat  13jul2026
 '''
 
