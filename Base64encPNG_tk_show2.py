@@ -9,7 +9,7 @@ you can use place() and grid()  and
 place() and pack() layout managers together,
 but not pack() and grid()
 
-tested using the Spyder IDE on Linux  vegaseat  19jul2026
+tested using the SublimeText IDE on Linux  vegaseat  19jul2026
 """
 
 import pprint
