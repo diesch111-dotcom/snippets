@@ -5,10 +5,10 @@
 source
 http://en.wikipedia.org/wiki/The_World%27s_Billionaires
 
-tested with LinuxMint and Spyder IDE   vegaseat  19jul2026
+tested with LinuxMint and SublimeText IDE   vegaseat  19jul2026
 """
 
-# adjusted to form csv file data since tab separation does not work properly
+# adjusted to  form csv file data since tab separation does not work properly
 # No.,Name,Net worth (USD),Age,Nationality,Primary source(s) of wealth
 raw_data = '''\
 1,Elon Musk,$839 billion,54,United States,Tesla and SpaceX
