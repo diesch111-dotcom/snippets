@@ -10,7 +10,7 @@ https://tkdocs.com/shipman/entry.html
 https://tkdocs.com/shipman/grid.html
 
 
-tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
+tested using the SublimeText IDE on Linux  vegaseat  13jul2026
 '''
 
 from functools import partial
