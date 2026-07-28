@@ -16,7 +16,7 @@ curious fact:
 in the LinuxMint terminal type:  python3 -m tkinter
 to get a small tkinter window showing the version of tkinter you have
 
-tested with LinuxMint and Spyder IDE  vegaseat  20jul2026
+tested with LinuxMint and  SublimeText IDE  vegaseat  20jul2026
 '''
 
 from functools import partial
