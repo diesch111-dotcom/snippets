@@ -5,9 +5,8 @@
 A Tkinter example showing several ways for command to 'pass' an argument
 ('command=' accepts a function reference not a function call)
 
-tested ++ using the Spyder IDE on Linux  vegaseat aka Joe's Dad  13jul2026
+tested ++ using the SublimeText IDE on Linux  vegaseat aka Joe's Dad  13jul2026
 '''
-
 import tkinter as tk
 from functools import partial
 import itertools as itr
