@@ -18,7 +18,7 @@ import urllib.request as url_lib
 root = tk.Tk()
 root.title("Tkinter URL Image Viewer")
 
-# URLs with images you can acces are getting rare!
+# URLs with images you can access are getting rare!
 # This one is gorgeous!  Hurray to Switzerland!
 # get a URL based image from the internet
 # if the url is very long, split it in half
