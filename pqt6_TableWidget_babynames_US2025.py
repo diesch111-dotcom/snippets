@@ -29,7 +29,7 @@ class BabyNamesTable(QWidget):
         columns = 2
         self.table = QTableWidget(rows, columns, self)
         self.table.setHorizontalHeaderLabels(["Boy", "Girl"])
-        # set column 0 to 200px and column 1 to 120px
+        # set column 0 to 120px and column 1 to 120px
         self.table.setColumnWidth(0, 120)
         self.table.setColumnWidth(1, 120)
 
