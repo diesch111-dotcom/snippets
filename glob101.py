@@ -12,6 +12,8 @@ quick file-management tasks.
 [] :    Matches any character inside the brackets 
 [0-9] : Matches any single digit
 
+note: glob_lists.py is an update!
+
 works with LinuxMint and Spyder IDE  dns(vegaseat)  15jun2026
 """
 
