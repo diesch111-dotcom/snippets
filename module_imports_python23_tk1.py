@@ -14,6 +14,8 @@ tkFileDialog    tkinter.filedialog
 tkFont          tkinter.font
 tkMessageBox    tkinter.messagebox
 tkSimpleDialog  tkinter.simpledialog
+
+note: Tix is gone!
 '''
 
 try:
