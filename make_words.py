@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install idle3
 ...once installed shows up under 'Programming' as IDLE
 
-tested with idle IDE and LinuxMint  vegaseat  07aug2026
+tested with IDLE IDE and LinuxMint  vegaseat  07aug2026
 '''
 
 # make your own words, when Q comes up we want to use Qu
