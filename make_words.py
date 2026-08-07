@@ -2,12 +2,13 @@
 
 For instance replace A in Aark with other letters
 
-if need be install the idle3 IDE on the LinuxMint terminal:
+The idle IDE is usually part of the PYTHON installation!
+If need be install the idle3 IDE on the LinuxMint terminal:
 sudo apt update
 sudo apt install idle3
-...once installed shows up under 'Programming'
+...once installed shows up under 'Programming' as IDLE
 
-tested with idle3 IDE and LinuxMint  vegaseat  07aug2026
+tested with idle IDE and LinuxMint  vegaseat  07aug2026
 '''
 
 # make your own words, when Q comes up we want to use Qu
