@@ -44,6 +44,9 @@ R2 = 7K ohm (6.8k or 4.7k+2.2k)
 C1 = 100uF
 gives f = 0.96Hz  t(high) = 554ms  t(low) = 486ms  dc(high) = 53%
 
+Used an 'Arduino UNO' programmed in C++ as a frequency meter to
+verify  calculations.
+
 tested with Spyder IDE on LinuxMint  vegaseat 15jun2026
 '''
 
