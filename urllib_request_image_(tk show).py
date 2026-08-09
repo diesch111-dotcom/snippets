@@ -4,8 +4,16 @@
 
 Retrieve and save an image from a web page
 Show image with tkinter
+please see:
+Debian -- The Universal Operating System.html
 
-tested with Spyder IDE on LinuxMint  vegaseat 19jul2026
+IDLE usually comes with Python install, to gain access...
+might have to install the IDLE IDE, in the Linux terminal use:
+sudo apt update
+sudo apt install idle3
+...once installed this way, it shows up under 'Programming' as IDLE
+
+tested with IDLE IDE on LinuxMint  vegaseat 19jul2026
 '''
 
 import urllib.request
