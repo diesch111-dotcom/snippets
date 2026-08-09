@@ -16,7 +16,7 @@ tested with IDLE IDE on LinuxMint  vegaseat 19jul2026
 import time
 
 # take a slice of the current time tuple
-# values you want are in index 3, 4, 5  so unpack
+# values you want are in index 3, 4, 5  so slice then unpack
 hr, min, sec = time.localtime()[3:6]
 
 # test
