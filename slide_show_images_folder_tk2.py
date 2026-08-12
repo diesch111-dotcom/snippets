@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' slide_show_images_folder_tk2.py
 
 A simple Tkinter slide show using glob and PIL.
@@ -14,7 +16,7 @@ to install pillow if needed
 Even though you install pillow, you still use the PIL namespace 
 in your Python code.
 
-tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 '''
 
 import os
