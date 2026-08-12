@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' Combobox_pasta_ttk3.py
 
 Exploring the Tkinter expansion module ttk.Combobox(),
@@ -13,9 +15,8 @@ Combobox, Notebook, Progressbar, Separator, Sizegrip and Treeview
 docs
 https://tkdocs.com/shipman/
 https://tkdocs.com/shipman/ttk-Combobox.html
-Maybe helpfull for planing your next dinner!
 
-tested using the Spyder IDE on Linux  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 '''
 
 import tkinter as tk
@@ -77,13 +78,13 @@ combo.bind('<<ComboboxSelected>>', selection_changed)
 # set the initial pasta
 combo.set(pasta_list[0])
 
-# shows possible options for the ttk.Combobox() widget
+# shows possible options for the ttk.Cobobox() widget
 import pprint
 pprint.pprint(combo.keys())
 
 root.mainloop()
 
-''' possible options for ttk.Combobox() ...
+''' possible options for ttk.Cobobox() ...
 ['height',
  'postcommand',
  'values',
