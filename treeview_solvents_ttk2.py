@@ -22,7 +22,7 @@ Save the picture by clicking the right mouse button on it for a menu.
 A little fickle at times on repeats.  This program happens to works okay!
 Use 'run with display screen' option a dropdown under 'run'
 
-tested using LinuxMint and Spyder IDE  dns(vegaseat)  3jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 """
 
 import tkinter as tk
