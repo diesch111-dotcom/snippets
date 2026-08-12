@@ -15,18 +15,17 @@ https://tkdocs.com/shipman/images.html
 Use a tk.PhotoImage object to display a photo image on a button.
 Have the popcorn ready! Click on the image to stop the show!  
 
-
-tested using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 """
 
 import tkinter as tk
 import os
 # Could change the folder to the one the pictures are in.
-#os.chdir('path/to/picture_dir')
+os.chdir('/home/admin123/Pictures/image/png')
 
 # testing ,,,
 # just in case your image files are simply parked in there
-print(os.getcwd())
+#print(os.getcwd())
 
 # create the root window
 root = tk.Tk()
@@ -44,7 +43,9 @@ image_files = [
 "Benz2.png",
 "Benz3.png",
 "Benz4.png",
-"Benz5.png"
+"Benz5.png",
+"Benz6.png",
+"Benz7.png"
 ]
 
 # use a button to display the slides
