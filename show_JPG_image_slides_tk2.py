@@ -5,6 +5,9 @@
 Display a number of images as a simple slide show using Tkinter.
 For .jpg files apply PIL ImageTk so tkinter can show them.
 
+Make the directory the working one and ...
+copy this small program into the folder where these files are and run it!
+
 docs
 http://tkinter.unpythonic.net/wiki/PhotoImage
 https://tkdocs.com/shipman/
@@ -13,18 +16,18 @@ https://tkdocs.com/shipman/images.html
 Use a PIL ImageTk object to display a photo image on a button.
 Have the popcorn ready! Click on the image to stop the show!  
 
-tested using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 """
 
 import tkinter as tk
 from PIL import ImageTk
 import os
 # Could change the folder to the one the pictures are in.
-#os.chdir('path/to/picture_dir')
+os.chdir("/home/admin123/Pictures/image/jpg")
 
 # testing ,,,
 # just in case your image files are simply in there for testing
-print(os.getcwd())
+#print(os.getcwd())
 
 # create the root window
 root = tk.Tk()
@@ -37,13 +40,15 @@ root.geometry("+{}+{}".format(70, 100))
 # pick image files you have in your working directory or use a full path
 # PIL ImageTk converts ,jpg fies so tkinter can use them.
 # Why .jpg files?  They are usually much smaller in byte size.
-# since Stuttgart was my home town, let look at "Benzes"
+# again, since Stuttgart was my home town, let's look at "Benzes"
 image_files = [
 "Benz1.jpg",
 "Benz2.jpg",
 "Benz3.jpg",
 "Benz4.jpg",
-"Benz5.jpg"
+"Benz5.jpg",
+"Benz6.jpg",
+"Benz7.jpg"
 ]
 
 # use a button to display the slides
