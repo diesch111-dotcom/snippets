@@ -1,12 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' PG_sound_tk2.py
 
 Click a button to play sound and stop sound
 The pygame module handles the sound for tkinter
-Will play  MP3, WAV, OGG, MIDI etc.
-
-If you need the optiom to stop the play use
-def play2(sound)
-def stop(sound)
 
 docs
 https://docs.python.org/3/library/tkinter.html
@@ -20,7 +17,7 @@ curious fact:
 in the LinuxMint terminal type:  python3 -m tkinter
 to get a small tkinter window showing the version of tkinter you have
 
-tested with LinuxMint and Spyder IDE  dns aka vegaseat  17jun2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 '''
 
 import pygame as pg
@@ -59,7 +56,7 @@ root.title("pick a button to play a sound via pygame")
 root['bg'] = 'gold'
 
 #LinuxMint:
-os.chdir("/home/dietrich/Music/sound")
+os.chdir("/home/admin123/Music/sound")
 
 # pick a wave sound file you have MP3, WAV, OGG, MIDI etc.
 # Linux filenames are case sensitive
