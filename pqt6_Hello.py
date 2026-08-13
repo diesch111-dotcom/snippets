@@ -4,7 +4,7 @@
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 """
 
 import sys

@@ -13,7 +13,7 @@ here 1 billion is 1_000_000_000 or 1e9
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested ++ with LinuxMint and SublimeText IDE   vegaseat  19jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 15jun2026
 '''
 
 from PyQt6.QtWidgets import *

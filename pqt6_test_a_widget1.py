@@ -1,11 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' pqt6_test_a_widget1.py
 
 A very simple template to test PyQt widgets
 
-
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
 # wildcards okay for testing...

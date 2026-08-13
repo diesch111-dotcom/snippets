@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' pqt6_color_bg2.py
 
-testing the PyQT GUI toolkit
-use QColor(r, g, b).name() and setStyleSheet(format_string)
+tCesting the PyQT GUI toolkit
+Use QColor(r, g, b).name() and setStyleSheet(format_string)
 to set the background color of the specified widget
 
 Also Qt.GlobalColor.red etc. allows for some basic color nmaes
@@ -14,7 +16,7 @@ does not affect the other widget on top of it
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
 # for Qt

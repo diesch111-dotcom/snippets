@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' pqt6_test_QSlider.py
 
 A simple template to test PyQT widgets
@@ -11,7 +13,7 @@ QSlider.TicksBelow	Draw tick marks below the (horizontal) slider
 QSlider.TicksLeft	Draw tick marks to the left of the (vertical) slider
 QSlider.TicksRight	Draw tick marks to the right of the (vertical) slider
 
-tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
 # wildcards okay for testing...

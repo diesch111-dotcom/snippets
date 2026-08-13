@@ -6,12 +6,12 @@ QTableWidget manages its own internal storage using
 QTableWidgetItem objects, making it ideal for quick 
 UI prototypes, small tables, or simpler applications.
 
-source
+source...
 US Social Security Office
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested ++ with LinuxMint and SublimeText IDE   vegaseat  02aug2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
 from PyQt6.QtWidgets import *
@@ -38,13 +38,13 @@ class BabyNamesTable(QWidget):
         data = [
 ('Liam', 'Olivia'),
 ('Noah', 'Charlotte'),
-('Oliver','Emma'),
+('Oliver', 'Emma'),
 ('Theodore', 'Amelia'),
 ('Henry', 'Sophia'),
 ('James', 'Mia'),
 ('Elijah', 'Isabella'),
 ('Mateo', 'Evelyn'),
-('William','Sofia'),
+('William', 'Sofia'),
 ('Lucas', 'Eliana')
         ]
         for rank, (boy, girl) in enumerate(data):

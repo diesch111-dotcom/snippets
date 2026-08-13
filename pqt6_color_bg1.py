@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' pqt6_color_bg1.py
 
-testing the PyQT GUI toolkit
-use QColor(r, g, b).name() and setStyleSheet(format_string)
+Testing the PyQT GUI toolkit
+Use QColor(r, g, b).name() and setStyleSheet(format_string)
 to set the background color of the specified widget
 
 here the form's background color is done with a style sheet
@@ -40,7 +42,6 @@ turquoise = #40E0D0
 violet = #EE82EE
 yellow = #FFFF00
 
-
 or r,g,b values 0 - 255
 red = QColor(255, 0, 0).name()
 or (try a color name)
@@ -49,7 +50,7 @@ print(QColor.colorNames())   # list of 148 predefined colors
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
 # for Qt

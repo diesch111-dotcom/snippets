@@ -1,11 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' pqt6_test_QLabel_Image1.py
 
-test PyQt5 widgets
-show QLabel with a QPixmap image on it
+Test PyQt5 widgets
+Show QLabel with a QPixmap image on it
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
-tested ++ using the Spyder IDE on Linux OS  dns aka vegaseat  13jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
 # for Qt
@@ -24,7 +26,7 @@ app = QApplication([])
 
 # the image file can be a .jpg, .png, ,gif, .bmp image file
 # if not in the working directory, give the full path ...
-image_file = "/home/dietrich/AAtest_py/image/jpg/PorscheBoxster.jpg"
+image_file = "/home/admin123/Pictures/image/jpg/PorscheBoxster.jpg"
 image = QPixmap(image_file)
 
 # QLabel adjusts to size of image
