@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 ''' pqt6_test_QSound1.py
 
-aA very simple template to test PyQT widgets
+A very simple template to test PyQT widgets
 Just test QSound, no window is shown
 Note: QSound() has been replaced in PyQt6 as the code below shows 
 
