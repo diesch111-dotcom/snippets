@@ -1,20 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' Listbox_(color-alternate-lines)_tk2.py
 
-Load a Tkinter tk.Listbox() with data then
-color alternate lines and select a listbox item with a mouse click.
+Load a Tkinter Listbox with data
+color alternate lines
+and select a listbox item with the mouse
+
+colors:
+Tkinter can use a number of named color strings (not case sensitive) like
+red, green, blue, white, black, tan, pink, yellow, magenta, lightblue
+lightgreen, moccasin, peachpuff, orange, grey, purple, brown ...
 
 docs
 https://docs.python.org/3/library/tkinter.html
-https://tkdocs.com/shipman/listbox.html
+https://tkdocs.com/shipman/
 
-
-tested using the Spyder IDE on Linux  dns aka vegaseat  15jul2026
+tested with Spyder IDE on LinuxMint  VegasEat 16aug2026
 '''
 
 import tkinter as tk
     
 
-def get_list(event=None):
+def get_selection(event=None):
     """
     function to read the listbox selection
     and put the result in a label widget
@@ -25,35 +32,40 @@ def get_list(event=None):
     seltext = listbox.get(index)
     # put the selected text in the label
     label['text'] = seltext
-    root.title(seltext)
     
 
 # the main window
 root = tk.Tk()
+# only set ULC (x, y) position of root
+root.geometry(f"+{60}+{150}")
+root.title("tk.Listbox")
 
 # create a label (width in characters)
-label = tk.Label(root, width=15)
-label.pack()
+# text will display centered (default)
+label = tk.Label(root, width=15, bg="lime")
 
 # create a listbox (height in characters)
 listbox = tk.Listbox(root, height=15)
-listbox.pack()
 
 friend_list = [
-'Stew', 'Tom', 'Jens', 'Adam', 'Al', 'Ethel',
-'Barb', 'Tiny', 'Tim', 'Pete', 'Sue', 'Zack',
-'Frank', 'Gustav', 'Ted', 'Morgan', 'Karen']
+'Stew', 'Tom', 'Jens', 'Oliver', 'Ali', 'Ethel',
+'Barb', 'Tabia', 'Tim', 'Pete', 'Sue', 'Zambina',
+'Frank', 'Gisela', 'Theo', 'Morgan', 'Mia']
 
-# load the listbox
-for index, item in enumerate(friend_list):
+# load the listbox withe sorted list
+for index, item in enumerate(sorted(friend_list)):
     listbox.insert('end', item)
     # optionally color alternate lines
     if index % 2:
         listbox.itemconfig(index, bg='light blue')
     
 # left mouse click on a list item to display selection
-listbox.bind('<ButtonRelease-1>', get_list)
+listbox.bind('<ButtonRelease-1>', get_selection)
 # use mouse wheel to scroll listbox items, focus first
 listbox.focus()
+
+# pack() the widgets from center top down (default)
+listbox.pack(padx=5)
+label.pack()
 
 root.mainloop()
