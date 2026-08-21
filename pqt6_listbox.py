@@ -4,6 +4,13 @@
 
 pyqt6 QPushButton and QListWidget (listbox), load and select
 
+some colors...
+aqua = "#00FFFF"
+bisque = "#FFE4C4"
+gold = "#FFD700"
+lime = "#00FF00"
+tan = "#D2B48C"
+
 tested with Spyder IDE on LinuxMint  VegasEat 20aug2026
 '''
 
@@ -36,6 +43,11 @@ class MyListWidget(QWidget):
         # listbox spans over 5 rows and 2 columns
         grid.addWidget(self.listbox, 1, 0, 5, 2)
         self.setLayout(grid)
+
+        # set the listbox background color
+        bisque = "#FFE4C4"
+        sf = "QWidget { background-color: %s }" % bisque
+        self.listbox.setStyleSheet(sf)
 
     def on_click(self):
         """the load button has been clicked, load the listbox"""
