@@ -10,6 +10,7 @@ bisque = "#FFE4C4"
 gold = "#FFD700"
 lime = "#00FF00"
 tan = "#D2B48C"
+QColor.colorNames() gives a list of 148 predefied color names
 
 tested with Spyder IDE on LinuxMint  VegasEat 20aug2026
 '''
