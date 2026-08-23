@@ -2,34 +2,53 @@
 # -*- coding: utf-8 -*-
 """ pqt6_Hello.py
 
-If need be use the Linux Software Manager to install Python3-pyqt6
+Using the VSCodium terminal to install pyqt6, if you don't have it...
+python -m pip install pyqt6
+...Successfully installed PyQt6-Qt6-6.11.1 PyQt6-sip-13.12.0 pyqt6-6.11.0
 
-tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
+alas, a VSCodium message...
+Gtk-Message: 17:47:16.163: Failed to load module "xapp-gtk3-module"
+I was told to accept this harmless flaw due to Linux, simply ignore it!
+
+Imports are a pain unless you simplify your life with wildcards '*'
+Looks like a lot of code for such a simple thing! Bare with me, it gets better!
+We still need to study and add color and a nice font!
+
+QLabel in PyQt6 doesn't have a built-in clicked signal like QPushButton
+
+tested with VSCodium IDE on LinuxMint  VegasEat 21aug2026
 """
 
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
+# consider wildcard imports to be initially okay with pyqt
+# name conflicts are limited because of the consistent 'Q' prefix of widgets
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
 
 def main():
-    # 1. Every PyQt app must create an application object
+    # every PyQt app must create an application object
     app = QApplication(sys.argv)
     
-    # 2. Create the main window container
+    # create the main window 
     window = QWidget()
-    window.setWindowTitle("My First PyQt App")
-    # width, height
-    window.resize(300, 100)
+    # give it a title 
+    window.setWindowTitle("Hello...")
+    # set the location (Upper Left Corner coordinates) and size
+    # setGeometry(x_pos, y_pos, width, height)
+    window.setGeometry(100, 150, 300, 220)
     
-    # 3. Create a layout and add a text label widget
+    # create a simple layout and add a label widget
     layout = QVBoxLayout()
+    # the infamous hello
     label = QLabel("Hello, World!")
     layout.addWidget(label)
     
-    # 4. Set the layout on the window and display it
+    # set the layout in the window and show your genius effort
     window.setLayout(layout)
     window.show()
     
-    # 5. Start the application's event loop and exit cleanly when done
+    # start the application's event loop with app.exec()
+    # also allow the window corner x click to exit when done
     sys.exit(app.exec())
 
 if __name__ == "__main__":
