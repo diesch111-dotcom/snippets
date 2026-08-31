@@ -5,22 +5,22 @@
 Draw a triangle using a 3 point QPolygon
 
 Use QPolygon (integer coordinates) or
-QPolygonF (floating-point coordinates)
-QColor.colorNames()  gives a list of 148 predefined colors
+QPolygonF (floating-point coordinates) for finer detail
+eg.
+QColor.colorNames()  gives a list of 148 predefined color names
 
 featuring...
 painter = QPainter()
-painter.setRenderHint()
 QPoint(x, y)
-QPolygon(list of 3 points)
+triangle = QPolygon(list of 3 points)
 painter.setPen(QColor())
 painter.setBrush(QColor())
-painter.drawPolygon()
+painter.drawPolygon(triangle)
 
-tested with IDLE IDE on LinuxMint  VegasEat 20aug2026
+tested with VSCodium IDE on LinuxMint  VegasEat 31aug2026
 '''
 
-from PyQt6.QtCore import QPoint, Qt
+from PyQt6.QtCore import QPoint
 from PyQt6.QtGui import QBrush, QColor, QPainter, QPolygon
 from PyQt6.QtWidgets import QApplication, QWidget
 
@@ -31,23 +31,25 @@ class Triangle(QWidget):
         # inherits from Qwidget
         super().__init__()
         self.setWindowTitle("PyQt6 Triangle")
+        # the QWidget is self and forms the canvas to draw on
         # resize(width, height)
         self.resize(400, 400)
 
     def paintEvent(self, event):
         ''' QPainter sets up paintEvent()'''
         painter = QPainter(self)
-        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
 
-        # the 3 corner coordinates  of a triangle
+        # set up the 3 possible (x, y) corner coordinates of a triangle
+        # (automatically closes up first to last point)
+        # stay within the 'canvas' size
         top = QPoint(200, 50)
-        bottom_right = QPoint(320, 300)
-        bottom_left = QPoint(80, 300)
+        bottom_right = QPoint(350, 300)
+        bottom_left = QPoint(50, 300)
 
-        # do the triangle via QPolygon give list of 3 corner coordinates
+        # do the triangle via QPolygon, give list of 3 corner coordinates
         triangle = QPolygon([top, bottom_right, bottom_left])
 
-        # setPen() sets border line
+        # setPen() sets border line color
         painter.setPen(QColor("black"))
         # setBrush() sets fill color
         painter.setBrush(QBrush(QColor("navy")))
@@ -62,5 +64,4 @@ if __name__ == "__main__":
     tr.show()
     # event loop...
     app.exec()
-
 
