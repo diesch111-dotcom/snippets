@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-''' pyqt6_ClickableLabel.py
+''' pyqt_ClickableLabel.py
 
 QLabel in PyQt6 doesn't have a built-in clicked signal like QPushButton
 so...
