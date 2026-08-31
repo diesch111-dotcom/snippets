@@ -11,7 +11,7 @@ QColor(r, g, b, alpha=255)
 where r, g, b are red, green, blue values as integers 0 to 255
 alpha is the transparency value (0 --> most transparent)
 
-Pen and Brush set drawing and fill colors
+Pen and Brush set outline and fill colors
 a color can be selected via ...
 r,g,b values 0 - 255
 red = QColor(255, 0, 0)
