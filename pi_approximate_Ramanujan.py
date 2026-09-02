@@ -6,9 +6,9 @@ Some functions which give an approximation
 of the famous irrational number pi (π)
 The approximation by Ramanujan is very good!
 
-Srinivasa Ramanujan (1887–1920) was an Indian mathematician
+Srinivasa Ramanujan (1887 to 1920) was an Indian mathematician
 
-tested with Spyder IDE on LinuxMint  vegaseat 15jun2026
+tested with VSCodium IDE on LinuxMint  VegasEat 29aug2026
 """
 
 from math import factorial
@@ -49,17 +49,17 @@ def pi_ramanujan(n_max, digits=50):
     """
     Ramanujan's algorithm to calculate
     pi (π) that converged extremely fast
-    2 iterations are actually good enough!
+    4 to 6  iterations are actually good enough!
     uses Python module decimal
     """
     getcontext().prec = digits
-    pi = 0
+    ipi = 0
     k = 0
     while k <= n_max:
-        pi += (Decimal(factorial(4*k))/Decimal(factorial(k)**4))*\
+        ipi += (Decimal(factorial(4*k))/Decimal(factorial(k)**4))*\
             Decimal((1103 + 26390*k))/Decimal((4*99)**(4*k))
         k += 1
-    return 9801/(2*Decimal(2).sqrt()*pi)
+    return 9801/(2*Decimal(2).sqrt()*ipi)
 
 
 if __name__ == "__main__":
@@ -68,8 +68,8 @@ if __name__ == "__main__":
     print("3.1415926535897932384626433832795028841971693993751")
     print("pi_ramanujan(6):")
     print(pi_ramanujan(6))
-    print("pi_riemann(100):")
-    print(pi_riemann(100))
+    print("pi_riemann(1000):")
+    print(pi_riemann(1000))
     print("pi_euler(100):")
     print(pi_euler(100))
 
