@@ -121,6 +121,8 @@ sentence_list = [
 'A Hard Drive is getting home in the winter,',
 'Is reading in the bathroom considered Multi-Tasking?',
 'What boots up must come down.',
+'A hole is nothing in something',
+'A doe does what does do!',
 'There are more chicken than people in the world.' 
 ]
 
