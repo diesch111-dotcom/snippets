@@ -13,8 +13,9 @@ example...
 red = "#ff0000"
 self.setStyleSheet("QWidget { background-color: red }")
 
-via rgbmixer.exe HTML ...
-aqua = #00FFFF
+get HTML hex color strings via QColor(color_name).name()...
+aqua = #00FFFF  or #00ffff
+black = #000000
 blue = #0000FF
 brown = #A52A2A
 bisque = #FFE4C4
@@ -41,26 +42,28 @@ teal = #008080
 tomato = #D2B48C
 turquoise = #40E0D0
 violet = #EE82EE
+wheat = #f5deb3
+white = #ffffff
 yellow = #FFFF00
 
 or r,g,b values 0 - 255
 red = QColor(255, 0, 0).name()
 or (try a color name)
 QColor("colorName").name()   # gives HTML hex string
-print(QColor.colorNames())   # list of 148 predefined colors
+print(QColor.colorNames())   # list of 148 predefined color names
 
 If need be use the Linux Software Manager to install Python3-pyqt6
 
 tested with Spyder IDE on LinuxMint  VegasEat 19jul2026
 '''
 
-# for Qt
-from PyQt6.QtCore import *
-# for QColor
-from PyQt6.QtGui import *
+import pprint
+from PyQt6.QtGui import QColor
 # for QWidget, QPushButton, QLabel, QApplication etc
-from PyQt6.QtWidgets import *
-import sys
+from PyQt6.QtWidgets import (
+    QApplication, QWidget, QPushButton, QGridLayout  
+)
+
 
 class MyForm(QWidget):
     def __init__(self):
@@ -78,12 +81,13 @@ class MyForm(QWidget):
         bgYellow =  bgString % "#ffff00"
         # set the background color of the form
         self.setStyleSheet(bgYellow)
-
+        
         # create a widget to display the color in
         self.display = QWidget(self)
         self.display.setGeometry(0, 0, 50, 50)
 
         btnRed = QPushButton("Red")
+        # all pushbuttons
         bgWhite = "QPushButton { background-color: #ffffff }"
         btnRed.setStyleSheet(bgWhite)
         # bind the button click to a function reference
@@ -143,161 +147,37 @@ class MyForm(QWidget):
 app =  QApplication([])
 form = MyForm()
 form.show()
-sys.exit(app.exec())
+app.exec()
 
 # extra
 # pqt predefined color names...
-for color in QColor.colorNames():
-    print(color)
+pprint.pprint(QColor.colorNames(), compact=True)
 
-''' pqt predefined colors
-aliceblue
-antiquewhite
-aqua
-aquamarine
-azure
-beige
-bisque
-black
-blanchedalmond
-blue
-blueviolet
-brown
-burlywood
-cadetblue
-chartreuse
-chocolate
-coral
-cornflowerblue
-cornsilk
-crimson
-cyan
-darkblue
-darkcyan
-darkgoldenrod
-darkgray
-darkgreen
-darkgrey
-darkkhaki
-darkmagenta
-darkolivegreen
-darkorange
-darkorchid
-darkred
-darksalmon
-darkseagreen
-darkslateblue
-darkslategray
-darkslategrey
-darkturquoise
-darkviolet
-deeppink
-deepskyblue
-dimgray
-dimgrey
-dodgerblue
-firebrick
-floralwhite
-forestgreen
-fuchsia
-gainsboro
-ghostwhite
-gold
-goldenrod
-gray
-green
-greenyellow
-grey
-honeydew
-hotpink
-indianred
-indigo
-ivory
-khaki
-lavender
-lavenderblush
-lawngreen
-lemonchiffon
-lightblue
-lightcoral
-lightcyan
-lightgoldenrodyellow
-lightgray
-lightgreen
-lightgrey
-lightpink
-lightsalmon
-lightseagreen
-lightskyblue
-lightslategray
-lightslategrey
-lightsteelblue
-lightyellow
-lime
-limegreen
-linen
-magenta
-maroon
-mediumaquamarine
-mediumblue
-mediumorchid
-mediumpurple
-mediumseagreen
-mediumslateblue
-mediumspringgreen
-mediumturquoise
-mediumvioletred
-midnightblue
-mintcream
-mistyrose
-moccasin
-navajowhite
-navy
-oldlace
-olive
-olivedrab
-orange
-orangered
-orchid
-palegoldenrod
-palegreen
-paleturquoise
-palevioletred
-papayawhip
-peachpuff
-peru
-pink
-plum
-powderblue
-purple
-red
-rosybrown
-royalblue
-saddlebrown
-salmon
-sandybrown
-seagreen
-seashell
-sienna
-silver
-skyblue
-slateblue
-slategray
-slategrey
-snow
-springgreen
-steelblue
-tan
-teal
-thistle
-tomato
-transparent
-turquoise
-violet
-wheat
-white
-whitesmoke
-yellow
-yellowgreen
-
+''' pqt predefined colors...
+['aliceblue', 'antiquewhite', 'aqua', 'aquamarine', 'azure', 'beige', 'bisque',
+ 'black', 'blanchedalmond', 'blue', 'blueviolet', 'brown', 'burlywood',
+ 'cadetblue', 'chartreuse', 'chocolate', 'coral', 'cornflowerblue', 'cornsilk',
+ 'crimson', 'cyan', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgray',
+ 'darkgreen', 'darkgrey', 'darkkhaki', 'darkmagenta', 'darkolivegreen',
+ 'darkorange', 'darkorchid', 'darkred', 'darksalmon', 'darkseagreen',
+ 'darkslateblue', 'darkslategray', 'darkslategrey', 'darkturquoise',
+ 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray', 'dimgrey', 'dodgerblue',
+ 'firebrick', 'floralwhite', 'forestgreen', 'fuchsia', 'gainsboro',
+ 'ghostwhite', 'gold', 'goldenrod', 'gray', 'green', 'greenyellow', 'grey',
+ 'honeydew', 'hotpink', 'indianred', 'indigo', 'ivory', 'khaki', 'lavender',
+ 'lavenderblush', 'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral',
+ 'lightcyan', 'lightgoldenrodyellow', 'lightgray', 'lightgreen', 'lightgrey',
+ 'lightpink', 'lightsalmon', 'lightseagreen', 'lightskyblue', 'lightslategray',
+ 'lightslategrey', 'lightsteelblue', 'lightyellow', 'lime', 'limegreen',
+ 'linen', 'magenta', 'maroon', 'mediumaquamarine', 'mediumblue', 'mediumorchid',
+ 'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen',
+ 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose',
+ 'moccasin', 'navajowhite', 'navy', 'oldlace', 'olive', 'olivedrab', 'orange',
+ 'orangered', 'orchid', 'palegoldenrod', 'palegreen', 'paleturquoise',
+ 'palevioletred', 'papayawhip', 'peachpuff', 'peru', 'pink', 'plum',
+ 'powderblue', 'purple', 'red', 'rosybrown', 'royalblue', 'saddlebrown',
+ 'salmon', 'sandybrown', 'seagreen', 'seashell', 'sienna', 'silver', 'skyblue',
+ 'slateblue', 'slategray', 'slategrey', 'snow', 'springgreen', 'steelblue',
+ 'tan', 'teal', 'thistle', 'tomato', 'transparent', 'turquoise', 'violet',
+ 'wheat', 'white', 'whitesmoke', 'yellow', 'yellowgreen']
 '''
