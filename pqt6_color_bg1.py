@@ -9,8 +9,9 @@ to set the background color of the specified widget
 here the form's background color is done with a style sheet
 this does affect the widgets on top of the form
 
-Use
-#rrggbb string eg. red = "#ff0000"
+example...
+red = "#ff0000"
+self.setStyleSheet("QWidget { background-color: red }")
 
 via rgbmixer.exe HTML ...
 aqua = #00FFFF
