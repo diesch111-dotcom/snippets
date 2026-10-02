@@ -18,6 +18,8 @@ https://github.com/arduino-libraries/Arduino_Modulino/tree/main/examples/Modulin
 If need be...
 Install header files with the Library Manager
 
+I am using the free Arduino IDE version 2.3.10
+
 VegasEat  30sep2026
  */
 
