@@ -1,7 +1,7 @@
 /* UNO_LED_blink_odd_even.ino
 
 Exploring an Arduino UNO programmable controller:
-Comvert millis() milliseconds to seconds and use ()seconds % 2 == 0) when even
+Comvert millis() milliseconds to seconds and use (seconds % 2 == 0) when even
 Avoids the blocking delay() function.
 
 docs
