@@ -1,6 +1,6 @@
 /* ModulinoPixels_led_set.ino
 
-Using the Arduino Plug and Make kit.
+Exploring the Arduino Plug and Make kit.
 Attach the ModulinoPixels module with the provided 5-cm Qwiic cable to 
 the white 'Qwiic' connector on the UNO R4 WiFi or UNO Q right side.
 
