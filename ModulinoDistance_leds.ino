@@ -28,7 +28,7 @@ https://github.com/arduino-libraries/Arduino_Modulino/tree/main/examples/Modulin
 If need be...
 Install Modulino.h   (all) with the Library Manager
 
-I am using the free Arduino IDE version 2.3.10
+I am using the free Arduino IDE version 2.3.10  uses C++
 
 modified by...
 VegasEat  01oct2026
