@@ -1,6 +1,6 @@
 /* ModulinoDistance_leds.ino
 
-Using the Arduino Plug and Make kit.
+Exploring the Arduino Plug and Make kit.
 Daisy-chain the ModulinoPixels and the ModulinoDistance modules with the provided 
 5-cm Qwiic cable to the 'Qwiic' connector on the 'UNO R4 WiFi' right side.
  
