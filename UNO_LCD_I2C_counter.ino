@@ -51,7 +51,7 @@ VegasEat  02oct2026
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-// create the class instance, let's 'call it lcd
+// create the class instance, let's call it lcd
 LiquidCrystal_I2C lcd(0x27, 16, 2);  // 0x27 or maybe 0x3F
 
 unsigned long seconds = 0;
