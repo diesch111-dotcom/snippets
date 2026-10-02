@@ -4,7 +4,7 @@ Exploring the Arduino Plug and Make kit.
 Daisy-chain the ModulinoPixels and the ModulinoDistance modules with the provided 
 5-cm Qwiic cable to the 'Qwiic' connector on the 'UNO R4 WiFi' right side.
  
-The Modulino distance sensor uses Time-of-Flight (ToF) technology to measure
+The Modulino distance sensor uses Time-of-Flight (ToF) technology to detect
 distances accurately by measuring the time it takes for a beam of laser IR 
 light to reflect back from a reflective object eg. hold your hand above the 
 module (the sensing cone is narrow).
