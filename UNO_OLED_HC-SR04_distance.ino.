@@ -1,0 +1,128 @@
+/* UNO_OLED_HC-SR04_distance.ino
+
+  HC-SR04 distance sensor connections:
+  Vcc pin to +5V
+  Trigger pin to an Arduino digital IO pin
+  Echo pin to an Arduino digital IO pin
+  GND pin to GND
+
+  Most commonly send a 10 microsecond 40 kHz pulse to the HC-SR04 
+  trigger pin.
+  The Echo pin receives the echo of this pulse, the duration timing 
+  relates to the distance travelled.  Only the return trip is used, 
+  so half the total time: 
+  distance = (echo_pulse_time/2) * speed of sound
+
+  If the speed of sound is given in cm/microsecond, then the distance
+  will be in cm.
+  At 20C the speed of sound is 343m/sec or 0.0343 cm/microsec
+  distance_cm = (500/2)*0.0343
+
+  Use a box with smooth walls in front of sensor, check
+  distance (membrane location) with a ruler to see if it matches.
+
+  The 128x64 pixel OLED display uses an SSD1306 driver.
+  White Color 0.96 Inch Oled Display Module 128*64 I2C 
+  Serial bus (from Walmart ca. $18).
+  Has 4 pins (l to r):
+  1 GND
+  2 VCC  +5V
+  3 SCL  I2C clock line to UNO pin A5
+  4 SDA  I2C data line  to UNO pin A4
+
+  In case you haven't done it yet...
+  For any graphics routines:
+  Install the "Adafruit GFX" library
+  For the OLED display panel:
+  Install the "Adafruit SSD1306" library
+  "install all" installs both
+
+  Vegaseat  19sep2026
+*/
+
+// needed to use the I2C bus for the OLED display
+#include <Wire.h>
+// use OLED library header
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128  // OLED display width in pixels
+#define SCREEN_HEIGHT 64  // OLED display height in pixels
+
+// The pins for I2C are defined by the Wire-library.
+// On an Arduino UNO/Nano:  A4(SDA), A5(SCL)
+#define OLED_RESET -1
+#define SCREEN_ADDRESS 0x3C
+
+// define an object (class instance)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+#define trigPin 12 // UNO digital IO pin 12
+#define echoPin 11 // UNO digital IO pin 11
+
+float duration, distance_cm, distance_inch;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  // SSD1306_SWITCHCAPVCC = generate display voltage of 3.3V internally
+  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for (;;); // stop, loop/wait forever
+  }
+}
+
+void loop() {
+  // get the sensor values
+  displayDistance();
+  // show them
+  display.display();
+}
+
+void displayDistance() {
+  // initiate trigger pin LOW
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  // send a 10 microsecond long 40 kHz ultra sound pulse
+  // via the HC-SR04 trigger pin
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  // then measure the response time for the echo
+  duration = pulseIn(echoPin, HIGH);
+
+  // calculate distance...
+  // divide by 2 since sonar had to go forth ad back
+  // speed of sound is 0.0343 cm/microsecond in 20 degC air
+  distance_cm = (duration / 2) * 0.0343;
+  // there are 2.54 cm per inch
+  float distance_inch = distance_cm / 2.54;
+
+  // set the color, use white with monochrome displays
+  display.setTextColor(WHITE);
+  // set text/font size
+  // size 2 are 10 char, about 18 pixels high
+  display.setTextSize(2);
+  // clear the buffer
+  display.clearDisplay();
+  // sensor range is specified as 2 to 400 cm
+  if (distance_cm >= 400 || distance_cm <= 2) {
+    display.setCursor(0, 0);
+    display.print("Range?");
+  } else {
+    // set the cursor coordinates
+    // x = 0, y = 0  ULC
+    display.setCursor(0, 0);
+    // round to 1 decimal
+    display.print(distance_cm, 1);
+    display.print(" cm");
+    // uses 20 pixels/line to display characters well
+    display.setCursor(0,20);
+    display.print(distance_inch, 1);
+    display.print(" inch");
+  }
+  // update display 1000 ms = 1 sec apart
+  delay(1000);
+}
