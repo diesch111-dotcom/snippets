@@ -57,7 +57,7 @@ void loop() {
     // x, y, color
     matrix.beginText(0, 1, 0xFFFFFF);
     char buf[20];
-    sprintf(buf, " %d Herz  ", int(frequency));
+    sprintf(buf, " %d Hertz  ", int(frequency));
     matrix.println(buf);
     // set scroll direction
     matrix.endText(SCROLL_LEFT);
