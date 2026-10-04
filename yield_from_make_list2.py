@@ -13,7 +13,7 @@ def range_gen(n):
     generate a complex list...
     for item in iterable: yield item 
     is simplified to:
-    with yield from iterable
+    yield from iterable
     '''
     yield from range(-n, 0)
     #yield from range(1, n+1)
@@ -21,7 +21,6 @@ def range_gen(n):
     #yield from list('abc')  # or...
     yield from {'a': 1, 'b': 2, 'c': 3}
     
-
 
 # testing ...
 print("Create a complex list:")
