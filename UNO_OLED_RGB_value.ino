@@ -30,6 +30,9 @@ Install via Arduino IDE → Library Manager:
 Adafruit SSD1306
 Adafruit GFX     (for graphics comes along)
 
+I am using the C++ based Arduino IDE version 2.3.10
+Help/Reference brings up potential built-in C++ details
+
 If port is not found unplug/replug USB
 
 */

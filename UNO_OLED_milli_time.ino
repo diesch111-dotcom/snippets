@@ -7,7 +7,7 @@ which uses only four wires and works on both 3.3V and 5V.
  Has 4 pins (l to r):
   1 GND
   2 VCC  +5V
-  3 SCL  I2C clock line to UNO pin A5
+  3 SCL  I2C clock line to UNO pin A5 (use yellow jumber)
   4 SDA  I2C data line  to UNO pin A4
 
 careful...
@@ -20,11 +20,14 @@ after that it will reset to zero and count up again
 
 Install via Arduino IDE → Library Manager:
 Adafruit SSD1306
-Adafruit GFX        (for graphics)
+Adafruit GFX      (for graphics comes along)
+
+I am using the C++ based Arduino IDE version 2.3.10
+Help/Reference brings up potential built-in C++ details
 
 If port is not found unplug/replug USB
 
-VegasEat  03oct2026
+VegasEat  05oct2026
 */
 
 #include <Wire.h>

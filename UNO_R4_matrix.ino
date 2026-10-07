@@ -1,4 +1,4 @@
-/* UNO_R4_matrix_vector.ino
+/* UNO_R4_matrix-vector.ino
 
 Exploring C++ on the Arduino:
 Displaying a C++ vector on the Arduino R4 WiFi matrix
