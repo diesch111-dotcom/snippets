@@ -10,7 +10,11 @@
   LED anode to limiting resistor 330 ohm, or PWM pin set to <= 255/5
 
   Add more LEDs, as long as the anode goes into a PWM pin set to <= 255/5
-  (mostly cut and past)
+
+  Only 4 different pins can be used as PWM at the same time!
+
+I am using the C++ based Arduino IDE version 2.3.10
+Help/Reference brings up potential built-in C++ details
 
   VegasEat  06oct2026
 */
@@ -31,25 +35,25 @@ int pwm_level = 255 / 5;  // or less to be safe
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);    // the onboard LED (pin 13)
 
-  pinMode(red_cathode, OUTPUT);    // use digitalWrite
+  pinMode(red_cathode, OUTPUT);    // will use digitalWrite
   digitalWrite(red_cathode, LOW);  // mimics GND, convenient location
-  pinMode(red_anode, OUTPUT);      // will use analogWrite in loop()
+  pinMode(red_anode, OUTPUT);      // will use analogWrite
 
-  pinMode(grn_cathode, OUTPUT);    // use digitalWrite
+  pinMode(grn_cathode, OUTPUT);    // will use digitalWrite
   digitalWrite(grn_cathode, LOW);  // mimics GND, convenient location
-  pinMode(grn_anode, OUTPUT);      // will use analogWrite in loop()
+  pinMode(grn_anode, OUTPUT);      // will use analogWrite
 
-  pinMode(yel_cathode, OUTPUT);    // use digitalWrite
+  pinMode(yel_cathode, OUTPUT);    // will use digitalWrite
   digitalWrite(yel_cathode, LOW);  // mimics GND, convenient location
-  pinMode(yel_anode, OUTPUT);      // will use analogWrite in loop()
+  pinMode(yel_anode, OUTPUT);      // will use analogWrite
 
-  pinMode(blu_cathode, OUTPUT);    // use digitalWrite
+  pinMode(blu_cathode, OUTPUT);    // will use digitalWrite
   digitalWrite(blu_cathode, LOW);  // mimics GND, convenient location
-  pinMode(blu_anode, OUTPUT);      // will use analogWrite in loop()
+  pinMode(blu_anode, OUTPUT);      // will use analogWrite
 
-  pinMode(wht_cathode, OUTPUT);    // use digitalWrite
+  pinMode(wht_cathode, OUTPUT);    // will use digitalWrite
   digitalWrite(wht_cathode, LOW);  // mimics GND, convenient location
-  pinMode(wht_anode, OUTPUT);      // will use analogWrite in loop()
+  pinMode(wht_anode, OUTPUT);      // will use analogWrite
 }
 
 // a while (true) situation...

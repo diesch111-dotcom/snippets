@@ -10,7 +10,10 @@
   LED anode to limiting resistor 330 ohm, or PWM pin set to <= 255/5
 
   Add more LEDs, as long as the anode goes into a PWM pin set to <= 255/5
-  (mostly cut and paste coding)
+  (mostly cut and past)e coding
+
+I am using the C++ based Arduino IDE version 2.3.10
+Help/Reference brings up potential built-in C++ details
 
   VegasEat  06oct2026
 */

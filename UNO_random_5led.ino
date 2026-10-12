@@ -10,13 +10,15 @@
   LED cathode to GND, or digital IO pin set LOW
   LED anode to limiting resistor 330 ohm, or PWM pin set to <= 255/5
 
-  Add more LEDs, as long as the anode goes into a PWM pin set to <= 255/5
-  (mostly cut and paste)
+  Add more LEDs, as long as the anode goes into a PWM pin set to level <= 255/5
+  (mostly cut and paste coding)
+
+  Only 4 different pins can be used as PWM at the same time!
 
 I am using the C++ based Arduino IDE version 2.3.10
 Help/Reference brings up potential built-in C++ details
 
-  VegasEat  06oct2026
+VegasEat  06oct2026
 */
 
 int red_cathode = 7;   // short LED lead
@@ -61,9 +63,10 @@ void setup() {
 
 // loop() is a while (true) loop ...
 void loop() {
+  // the random generator is built-in to the Arduino IDE
   // get a random number from 0 to 4
-  // random(min, max), max is exclusive
-  long rand_int = random(0, 5);
+  // random(min,max), max is exclusive
+  long rand_int = random(0, 5;
   Serial.println(rand_int);  // test...
 
   switch (rand_int) {
