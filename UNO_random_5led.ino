@@ -61,8 +61,9 @@ void setup() {
 
 // loop() is a while (true) loop ...
 void loop() {
-  // get a random number from 0 to 5
-  long rand_int = random(0, 6);
+  // get a random number from 0 to 4
+  // random(min, max), max is exclusive
+  long rand_int = random(0, 5);
   Serial.println(rand_int);  // test...
 
   switch (rand_int) {
