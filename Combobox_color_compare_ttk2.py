@@ -1,28 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 ''' Combobox_color_compare_ttk2.py
 
-exploring the ttk.Combobox() and its actions
-allows one item to be selected
+Exploring the ttk.Combobox() and its actions.
+Allows one item to be selected.
 
-compare colors that are close next to each other
-
-similar to tk.OptionMenu()
-
-Tkinter can use a number of named colors (not case sensitive) like
-red, green, blue, white, black, tan, pink, yellow, magenta, lightblue
-lightgreen, moccasin, peachpuff, orange, grey, purple, brown
-also (light=1 to dark=4) hues of colors like
-red1, red2, red3, red4   etc.
-
-tk has also color format hex "#rrggbb" for instance:
-azure = '#f0ffff'
-beige = '#f5f5dc'
-bisque = '#ffe4c4'
-chocolate = '#d2691e'
-gainsboro = '#dcdcdc'
-gold = '#ffd700'
-thistle = '#d8bfd8'
-
-see: color_dictionary_list1.py
+Compare colors that are close next to each other.
 
 Python27+ includes the Tkinter Tile extension Ttk.
 Ttk comes with 17 widgets, 11 of which already exist in Tkinter:
@@ -31,8 +14,7 @@ PanedWindow, Radiobutton, Scale and Scrollbar
 The 6 new widget classes are:
 Combobox, Notebook, Progressbar, Separator, Sizegrip and Treeview
 
-
-works with LinuxMint and Spyder IDE  dns(vegaseat)  15jun2026
+vegaseat  23oct2026
 '''
 
 import tkinter as tk
@@ -54,6 +36,7 @@ def show_selection2(event=None):
     # can also use combo2.get()
     color = var2.get()
     frame2['bg'] = color
+
 
 root = tk.Tk()
 # only set size of root
