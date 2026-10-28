@@ -43,3 +43,37 @@ print(sf.format(**food_dict))
 ''' result ...
 Bread costs $5.29
 '''
+
+print('='*26)
+
+# simpler...
+from tabulate import tabulate
+
+food_dict = {
+'almond milk' : 3.49,
+'butter' : 2.99,
+'bread' : 5.29,
+'blue cheese' : 4,
+'peanut butter' : 2.48,
+'grape jelly' : 3.77
+}
+
+print(tabulate(food_dict.items(), headers=['Food', 'Cost'], tablefmt='grid')) 
+
+'''
++---------------+--------+
+| Food          |   Cost |
++===============+========+
+| almond milk   |   3.49 |
++---------------+--------+
+| butter        |   2.99 |
++---------------+--------+
+| bread         |   5.29 |
++---------------+--------+
+| blue cheese   |   4    |
++---------------+--------+
+| peanut butter |   2.48 |
++---------------+--------+
+| grape jelly   |   3.77 |
++---------------+--------+
+'''
