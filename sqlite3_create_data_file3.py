@@ -12,8 +12,8 @@ import sqlite3
 header = 'name,wealth,age,source,nation'
 bill_list = [
 ['Elon Musk', '$839.0 billion', '54', 'Tesla and SpaceX', 'USA'],
-['Larry Page', '$257.0 billion', '52', 'part of Google', 'USA'],
-['Sergey Brin', '$237.0 billion', '52', 'part of Google', 'USA'],
+['Larry Page', '$257.0 billion', '52', 'Google', 'USA'],
+['Sergey Brin', '$237.0 billion', '52', 'Google', 'USA'],
 ['Jeff Bezos', '$224.0 billion', '62', 'Amazon', 'USA'],
 ['Mark Zuckerberg', '$222.0 billion', '41', 'Meta Platforms', 'USA'],
 ['Larry Ellison', '$190.0 billion', '81', 'Oracle Corporation', 'USA'],

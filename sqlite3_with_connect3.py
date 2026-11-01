@@ -37,31 +37,11 @@ with sqlite3.connect("Billionairs2026.db") as conn:
     cursor2 = conn.cursor()
     cursor2.execute("SELECT * FROM data")
     rows = cursor2.fetchall()
-    sf = "{} has {}, 'owns' {}"
+    sf = "{} has {}, 'owns shares of' {}"
     for row in rows:
         print(sf.format(row["name"], row["wealth"], row["source"]))
 
 '''
-Elon Musk is 54 years old, 'home' is in USA
-Larry Page is 52 years old, 'home' is in USA
-Sergey Brin is 52 years old, 'home' is in USA
-Jeff Bezos is 62 years old, 'home' is in USA
-Mark Zuckerberg is 41 years old, 'home' is in USA
-Larry Ellison is 81 years old, 'home' is in USA
-Bernard Arnault is 77 years old, 'home' is in FRANCE
-Jensen Huang is 63 years old, 'home' is in USA
-Warren Buffett is 95 years old, 'home' is in USA
-Amancio Ortega is 89 years old, 'home' is in SPAIN
-====================================================
-Elon Musk has $839.0 billion, 'owns' Tesla and SpaceX
-Larry Page has $257.0 billion, 'owns' part of Google
-Sergey Brin has $237.0 billion, 'owns' part of Google
-Jeff Bezos has $224.0 billion, 'owns' Amazon
-Mark Zuckerberg has $222.0 billion, 'owns' Meta Platforms
-Larry Ellison has $190.0 billion, 'owns' Oracle Corporation
-Bernard Arnault has $171.0 billion, 'owns' LVMH
-Jensen Huang has $154.0 billion, 'owns' Nvidia
-Warren Buffett has $149.0 billion, 'owns' Berkshire Hathaway
-Amancio Ortega has $148.0 billion, 'owns' Indite
+
 '''
 
