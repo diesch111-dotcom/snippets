@@ -44,7 +44,7 @@ void loop() {
   matrix.textScrollSpeed(100);
   // set font to 5x7 pixels
   matrix.textFont(Font_5x7);
-  // text at position (0, 1)
+  // text at position (0, 1, full color, here red LED)
   matrix.beginText(0, 1, 0xFFFFFF);
   // replaces std::cout << num << " ";
   // use range based for loop
