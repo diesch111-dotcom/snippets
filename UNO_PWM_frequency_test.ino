@@ -7,6 +7,8 @@
   (PWM is short for Pulse Width Modulation)
   Set PWM to 50% (127 of 254) to generate a squarewave
 
+  hertz is named after Heinrich Hertz (1857–1894), a German physicist
+
   VegasEat  25sep2026
 */
 
@@ -45,7 +47,7 @@ void loop() {
   pulse_low = pulseIn(input, LOW);
   // total duration squarewave pulse in microseconds
   time2 = pulse_high + pulse_low;
-  // frequency in Herz from inverse duration in microseconds
+  // frequency in Hertz from inverse duration in microseconds
   frequency = 1000000 / time2;
 
   if (frequency > 0) {
