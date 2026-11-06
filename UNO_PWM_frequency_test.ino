@@ -7,7 +7,9 @@
   (PWM is short for Pulse Width Modulation)
   Set PWM to 50% (127 of 254) to generate a squarewave
 
-  hertz is named after Heinrich Hertz (1857–1894), a German physicist
+  Hertz is named after Heinrich Hertz (1857–1894), a German physicist
+  Human heartbeat is about 1 Hertz
+  Human Audible Sound is 20Hz to 20,000Hz
 
   VegasEat  25sep2026
 */
